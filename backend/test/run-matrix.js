@@ -105,15 +105,21 @@ async function run() {
     }
     const stat = fs.statSync(reportPath);
     const d = stat.mtime;
-    const dateStr = `${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-    // Read previous report to extract which providers were tested
+    const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    const timeStr = `${String(d.getHours()).padStart(2, "0")}${String(d.getMinutes()).padStart(2, "0")}`;
+    // Extract providers from the previous report's summary table header
     const prevContent = fs.readFileSync(reportPath, "utf-8");
-    const providerNames = [...new Set(matrixResults.map((r) => r.provider))];
-    const prevProviders = providerNames
-      .filter((name) => prevContent.includes(name))
-      .map((name) => name.split(" ")[0].toLowerCase());
-    const modelStr = prevProviders.length > 0 ? prevProviders.join("-") : "unknown";
-    fs.renameSync(reportPath, path.join(archiveDir, `${dateStr}-${modelStr}-report.md`));
+    const headerMatch = prevContent.match(/\| File \| Client \|(.+)\|/);
+    let modelStr = "unknown";
+    if (headerMatch) {
+      modelStr = headerMatch[1]
+        .split("|")
+        .map((s) => s.trim())
+        .filter(Boolean)
+        .map((name) => name.split(" ")[0].toLowerCase())
+        .join("-");
+    }
+    fs.renameSync(reportPath, path.join(archiveDir, `${dateStr}-${timeStr}-${modelStr}-report.md`));
   }
 
   fs.writeFileSync(reportPath, report);

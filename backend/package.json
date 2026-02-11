@@ -11,12 +11,14 @@
     "single:file": "node test/script/run-single.js gemini lumaBill.pdf  "
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.74.0",
     "@google/genai": "^1.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "multer": "^1.4.5-lts.1",
-    "openai": "^6.21.0"
+    "openai": "^6.21.0",
+    "pdf-to-img": "^5.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

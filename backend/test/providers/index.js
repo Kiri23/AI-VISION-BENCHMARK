@@ -1,11 +1,11 @@
 const gemini = require('./gemini');
 const openai = require('./openai');
-// const claude = require('./claude');
+const claude = require('./claude');
 
 const providers = [
   gemini,
   openai,
-  // claude,
+  claude,
 ];
 
 module.exports = providers;
