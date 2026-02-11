@@ -99,6 +99,10 @@ Or use any other static server (VS Code Live Server extension, `npx http-server`
 ### POST `/api/upload`
 Upload a file for text recognition
 
+curl -s -X POST http://localhost:5008/api/upload -F
+      "file=@/Users/christiannogueras/Documents/Work/Akcelita/Uwe/Ideas/image-recognition/backend/sample/lumaBill.pdf" |
+      python3 -m json.tool
+
 **Request:**
 - Method: `POST`
 - Body: `multipart/form-data` with `file` field

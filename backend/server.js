@@ -4,6 +4,7 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 const { GoogleGenAI, Type } = require('@google/genai');
+const { EXTRACTION_PROMPT } = require('./test/prompt');
 require('dotenv').config();
 
 const app = express();
@@ -11,11 +12,6 @@ const PORT = process.env.PORT || 5000;
 
 // Initialize Gemini client
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-
-const EXTRACTION_PROMPT =
-  'Extract all monthly kWh consumption values from this LUMA/AEE electricity bill chart. ' +
-  'For each bar in the chart, return the month label (exactly as shown, e.g. "ago-24", "sep", "oct") ' +
-  'and the kWh number displayed above the bar. Return all months shown in the chart in chronological order from left to right.';
 
 // Middleware
 app.use(cors());
@@ -83,8 +79,9 @@ app.post('/api/upload', upload.single('file'), async (req, res) => {
                 properties: {
                   month: { type: Type.STRING },
                   kwh: { type: Type.NUMBER },
+                  costPerKwh: { type: Type.NUMBER },
                 },
-                required: ['month', 'kwh'],
+                required: ['month', 'kwh', 'costPerKwh'],
               },
             },
           },

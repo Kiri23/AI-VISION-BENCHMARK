@@ -5,4 +5,5 @@ uploads/
 *.log
 npm-debug.log*
 eng.traineddata
+test/results/
 .DS_Store

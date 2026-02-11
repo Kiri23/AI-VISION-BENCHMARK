@@ -1,0 +1,48 @@
+const fs = require('fs');
+const { GoogleGenAI, Type } = require('@google/genai');
+const { EXTRACTION_PROMPT } = require('../prompt');
+
+const responseSchema = {
+  type: Type.OBJECT,
+  properties: {
+    months: {
+      type: Type.ARRAY,
+      items: {
+        type: Type.OBJECT,
+        properties: {
+          month: { type: Type.STRING },
+          kwh: { type: Type.NUMBER },
+          costPerKwh: { type: Type.NUMBER },
+        },
+        required: ['month', 'kwh', 'costPerKwh'],
+      },
+    },
+  },
+  required: ['months'],
+};
+
+module.exports = {
+  name: 'Gemini 2.0 Flash',
+  async extract(filePath, mimeType) {
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+    const fileBuffer = fs.readFileSync(filePath);
+
+    const filePart = {
+      inlineData: {
+        data: fileBuffer.toString('base64'),
+        mimeType,
+      },
+    };
+
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.0-flash',
+      contents: [filePart, EXTRACTION_PROMPT],
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema,
+      },
+    });
+
+    return JSON.parse(response.text);
+  },
+};
