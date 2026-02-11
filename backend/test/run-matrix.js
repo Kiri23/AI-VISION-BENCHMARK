@@ -95,12 +95,27 @@ async function run() {
     fs.mkdirSync(RESULTS_DIR, { recursive: true });
   }
 
-  const today = new Date();
-  const day = String(today.getDate()).padStart(2, "0");
-  const month = String(today.getMonth() + 1).padStart(2, "0");
-  const microseconds = String(today.getMilliseconds() % 100).padStart(2, "0");
-  const dateString = `${day}-${month}-${microseconds}`;
-  const reportPath = path.join(RESULTS_DIR, `${dateString}-report.md`);
+  const reportPath = path.join(RESULTS_DIR, "report.md");
+
+  // Archive previous report if it exists
+  if (fs.existsSync(reportPath)) {
+    const archiveDir = path.join(RESULTS_DIR, "archive");
+    if (!fs.existsSync(archiveDir)) {
+      fs.mkdirSync(archiveDir, { recursive: true });
+    }
+    const stat = fs.statSync(reportPath);
+    const d = stat.mtime;
+    const dateStr = `${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    // Read previous report to extract which providers were tested
+    const prevContent = fs.readFileSync(reportPath, "utf-8");
+    const providerNames = [...new Set(matrixResults.map((r) => r.provider))];
+    const prevProviders = providerNames
+      .filter((name) => prevContent.includes(name))
+      .map((name) => name.split(" ")[0].toLowerCase());
+    const modelStr = prevProviders.length > 0 ? prevProviders.join("-") : "unknown";
+    fs.renameSync(reportPath, path.join(archiveDir, `${dateStr}-${modelStr}-report.md`));
+  }
+
   fs.writeFileSync(reportPath, report);
   console.log(`\nReport written to: ${reportPath}\n`);
   console.log(report);
