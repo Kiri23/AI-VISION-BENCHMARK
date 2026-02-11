@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 const OpenAI = require('openai');
 const { EXTRACTION_PROMPT } = require('../prompt');
 
@@ -29,7 +30,10 @@ module.exports = {
     const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
     const fileBuffer = fs.readFileSync(filePath);
     const base64 = fileBuffer.toString('base64');
-    const dataUrl = `data:${mimeType};base64,${base64}`;
+
+    const fileContent = mimeType === 'application/pdf'
+      ? { type: 'file', file: { file_data: `data:application/pdf;base64,${base64}`, filename: path.basename(filePath) } }
+      : { type: 'image_url', image_url: { url: `data:${mimeType};base64,${base64}` } };
 
     const response = await client.chat.completions.create({
       model: 'gpt-4o',
@@ -38,7 +42,7 @@ module.exports = {
           role: 'user',
           content: [
             { type: 'text', text: EXTRACTION_PROMPT },
-            { type: 'image_url', image_url: { url: dataUrl } },
+            fileContent,
           ],
         },
       ],
