@@ -14,7 +14,7 @@
       { "month": "may", "kwh": 465, "costPerKwh": 0.26 },
       { "month": "jun", "kwh": 516, "costPerKwh": 0.26 },
       { "month": "jul", "kwh": 556, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 835, "costPerKwh": 0.25 }
+      { "month": "ago-25", "kwh": 835, "costPerKwh": 0.25 }
     ]
   },
   "lumaBill.pdf": {

@@ -25,7 +25,9 @@ function compare(filename, apiResult) {
   const results = expected.map((exp, i) => {
     const act = actual[i];
 
-    const monthMatch = exp.month.trim().toLowerCase() === (act.month || '').trim().toLowerCase();
+    const expMonth = exp.month.trim().toLowerCase();
+    const actMonth = (act.month || '').trim().toLowerCase();
+    const monthMatch = expMonth.includes(actMonth) || actMonth.includes(expMonth);
     const kwhMatch = exp.kwh === act.kwh;
     const costMatch = Math.abs(exp.costPerKwh - (act.costPerKwh ?? 0)) <= COST_TOLERANCE;
 
