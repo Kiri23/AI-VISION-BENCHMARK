@@ -8,6 +8,7 @@
     "test:matrix": "node run-matrix.js",
     "compare-experiments": "node experiment-compare.js",
     "single": "node script/run-single.js openai",
+    "providerRun": "node script/run-provider.js openai",
     "single:file": "node script/run-single.js gemini lumaBill.pdf"
   },
   "dependencies": {
