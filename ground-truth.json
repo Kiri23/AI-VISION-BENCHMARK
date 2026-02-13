@@ -182,6 +182,7 @@
   },
   "imagenCropOut.jpg": {
     "client": "Client imagenCropOut",
+    "skip":true,
     "months": [
       { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
       { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
