@@ -29,6 +29,7 @@ const MIME_MAP = {
 
 const API_KEY_MAP = {
   "Gemini 2.0 Flash": "GEMINI_API_KEY",
+  "Gemini 3 Flash (Preview)": "GEMINI_API_KEY",
   "OpenAI GPT-4o": "OPENAI_API_KEY",
   "OpenAI GPT-4.1 Mini": "OPENAI_API_KEY",
   "OpenAI GPT-4.1 Nano": "OPENAI_API_KEY",
