@@ -57,7 +57,8 @@
   "imageMobile.jpg": {
     "client": "Client imageMobile",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -68,14 +69,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenMobile2.jpg": {
     "client": "Client imagenMobile2",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -86,14 +87,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenMobile3.jpg": {
     "client": "Client imagenMobile3",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -104,14 +105,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenConAngulo.jpg": {
     "client": "Client imagenConAngulo",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -122,14 +123,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenConAngulo2.jpg": {
     "client": "Client imagenConAngulo2",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -140,14 +141,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenConSombra.jpg": {
     "client": "Client imagenConSombra",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -158,14 +159,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenConSombra2.jpg": {
     "client": "Client imagenConSombra2",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -176,14 +177,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenCropOut.jpg": {
     "client": "Client imagenCropOut",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -194,14 +195,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenAlmostCropOut.jpg": {
     "client": "Client imagenAlmostCropOut",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -212,14 +213,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenVertical.jpg": {
     "client": "Client imagenVertical",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -230,14 +231,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenVertical2.jpg": {
     "client": "Client imagenVertical2",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -248,14 +249,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenVertical3.jpg": {
     "client": "Client imagenVertical3",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -266,14 +267,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenWithBackgroundObject.jpg": {
     "client": "Client imagenWithBackgroundObject",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -284,14 +285,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenWithBackgroundObject2.jpg": {
     "client": "Client imagenWithBackgroundObject2",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -302,14 +303,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenWithBackgroundObject3.jpg": {
     "client": "Client imagenWithBackgroundObject3",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -320,14 +321,14 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   },
   "imagenWithBackgroundObjectAnZoomOut.jpg": {
     "client": "Client imagenWithBackgroundObjectAnZoomOut",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
+      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
+      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
       { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
       { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
       { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
@@ -338,8 +339,7 @@
       { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
       { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
       { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
     ]
   }
 }
