@@ -65,12 +65,12 @@ function saveExperiment({ id, matrixResults, promptName, tag, preprocessing, rep
     tag: tag || null,
     promptVersion: promptName,
     preprocessing: preprocessing || "none",
-    reportMarkdown: reportMarkdown || null,
     imageCount: images.length,
     images,
     providers,
     results: matrixResults,
     summary,
+    reportMarkdown: reportMarkdown || null,
   };
 
   if (!fs.existsSync(dir)) {
