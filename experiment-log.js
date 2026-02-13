@@ -50,7 +50,7 @@ function generateExperimentId() {
   return `exp-${date}-${time}`;
 }
 
-function saveExperiment({ matrixResults, promptName, tag, preprocessing, reportContent, outputDir }) {
+function saveExperiment({ matrixResults, promptName, tag, preprocessing, reportMarkdown, outputDir }) {
   const now = new Date();
   const id = generateExperimentId();
   const dir = outputDir || EXPERIMENTS_DIR;
@@ -59,15 +59,13 @@ function saveExperiment({ matrixResults, promptName, tag, preprocessing, reportC
   const providers = [...new Set(matrixResults.map((r) => r.provider))];
   const summary = computeSummary(matrixResults);
 
-  const reportFileName = reportContent ? `${id}-report.md` : null;
-
   const experiment = {
     id,
     timestamp: now.toISOString(),
     tag: tag || null,
     promptVersion: promptName,
     preprocessing: preprocessing || "none",
-    reportFile: reportFileName,
+    reportMarkdown: reportMarkdown || null,
     imageCount: images.length,
     images,
     providers,
@@ -81,11 +79,6 @@ function saveExperiment({ matrixResults, promptName, tag, preprocessing, reportC
 
   const filePath = path.join(dir, `${id}.json`);
   fs.writeFileSync(filePath, JSON.stringify(experiment, null, 2));
-
-  if (reportContent) {
-    const reportPath = path.join(dir, reportFileName);
-    fs.writeFileSync(reportPath, reportContent);
-  }
 
   return { id, filePath };
 }

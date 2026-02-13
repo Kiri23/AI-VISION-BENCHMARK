@@ -122,6 +122,7 @@ async function run() {
     promptName,
     tag: experimentTag,
     preprocessing: experimentPreprocessing,
+    reportMarkdown: report,
   });
   console.log(`Experiment log saved: ${expPath} (${id})\n`);
 }
