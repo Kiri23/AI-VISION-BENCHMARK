@@ -38,9 +38,53 @@ const API_KEY_MAP = {
   "Claude Sonnet 4.5": "ANTHROPIC_API_KEY",
 };
 
+async function runOne(file, provider, filePath, mimeType) {
+  console.log(`Running: ${file} × ${provider.name}...`);
+  const start = Date.now();
+
+  try {
+    const result = await provider.extract(filePath, mimeType);
+    const durationMs = Date.now() - start;
+    const comparison = compare(file, result);
+    const usage = result.usage || null;
+    const estimatedCost = calculateCost(provider.name, usage);
+
+    const costStr = estimatedCost != null ? ` $${estimatedCost.toFixed(6)}` : '';
+    if (comparison.chartComplete === false) {
+      console.log(`  → ${file} × ${provider.name}: INCOMPLETE: ${comparison.warning} (${durationMs}ms)${costStr}`);
+    } else {
+      console.log(
+        `  → ${file} × ${provider.name}: ${comparison.correctCount}/${comparison.totalFields} correct (${durationMs}ms)${costStr}`,
+      );
+    }
+
+    return {
+      file,
+      provider: provider.name,
+      status: "OK",
+      durationMs,
+      comparison,
+      usage,
+      estimatedCost,
+    };
+  } catch (err) {
+    const durationMs = Date.now() - start;
+    console.log(`  → ${file} × ${provider.name}: ERROR: ${err.message} (${durationMs}ms)`);
+    return {
+      file,
+      provider: provider.name,
+      status: "ERROR",
+      durationMs,
+      error: err.message,
+      comparison: { client: groundTruth[file]?.client || null },
+    };
+  }
+}
+
 async function run() {
   const files = Object.keys(groundTruth);
   const matrixResults = [];
+  const tasks = [];
 
   for (const file of files) {
     const filePath = path.join(SAMPLE_DIR, file);
@@ -75,48 +119,12 @@ async function run() {
         continue;
       }
 
-      console.log(`Running: ${file} × ${provider.name}...`);
-      const start = Date.now();
-
-      try {
-        const result = await provider.extract(filePath, mimeType);
-        const durationMs = Date.now() - start;
-        const comparison = compare(file, result);
-        const usage = result.usage || null;
-        const estimatedCost = calculateCost(provider.name, usage);
-
-        matrixResults.push({
-          file,
-          provider: provider.name,
-          status: "OK",
-          durationMs,
-          comparison,
-          usage,
-          estimatedCost,
-        });
-
-        const costStr = estimatedCost != null ? ` $${estimatedCost.toFixed(6)}` : '';
-        if (comparison.chartComplete === false) {
-          console.log(`  → INCOMPLETE: ${comparison.warning} (${durationMs}ms)${costStr}`);
-        } else {
-          console.log(
-            `  → ${comparison.correctCount}/${comparison.totalFields} correct (${durationMs}ms)${costStr}`,
-          );
-        }
-      } catch (err) {
-        const durationMs = Date.now() - start;
-        matrixResults.push({
-          file,
-          provider: provider.name,
-          status: "ERROR",
-          durationMs,
-          error: err.message,
-          comparison: { client: groundTruth[file]?.client || null },
-        });
-        console.log(`  → ERROR: ${err.message} (${durationMs}ms)`);
-      }
+      tasks.push(runOne(file, provider, filePath, mimeType));
     }
   }
+
+  const results = await Promise.all(tasks);
+  matrixResults.push(...results);
 
   const experimentId = generateExperimentId();
   const report = generateReport(matrixResults, promptName, experimentId);

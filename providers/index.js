@@ -10,7 +10,7 @@ const claude = require('./claude');
 const providers = [
   gemini,
   gemini25Flash,
-  gemini3Flash,
+  // gemini3Flash,
   // openai,
   openai41Mini,
   // openai41Nano,
