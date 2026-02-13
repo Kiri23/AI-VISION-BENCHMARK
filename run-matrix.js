@@ -6,13 +6,14 @@ const providers = require("./providers");
 const { compare } = require("./compare");
 const { generateReport, archiveReport } = require("./report");
 const { promptName } = require("./prompt");
-const { saveExperiment } = require("./experiment-log");
+const { generateExperimentId, saveExperiment } = require("./experiment-log");
 const groundTruth = require("./ground-truth.json");
 
 // Parse CLI flags
 const tagArg = process.argv.find((a) => a.startsWith("--tag="));
 const preprocArg = process.argv.find((a) => a.startsWith("--preprocessing="));
-const experimentTag = tagArg ? tagArg.split("=")[1] : null;
+const imageCount = Object.keys(groundTruth).filter((f) => !groundTruth[f].skip).length;
+const experimentTag = tagArg ? tagArg.split("=")[1] : `${promptName}-${imageCount}img`;
 const experimentPreprocessing = preprocArg ? preprocArg.split("=")[1] : "none";
 
 const SAMPLE_DIR = path.join(__dirname, "sample");
@@ -102,7 +103,8 @@ async function run() {
     }
   }
 
-  const report = generateReport(matrixResults, promptName);
+  const experimentId = generateExperimentId();
+  const report = generateReport(matrixResults, promptName, experimentId);
 
   if (!fs.existsSync(RESULTS_DIR)) {
     fs.mkdirSync(RESULTS_DIR, { recursive: true });
@@ -118,6 +120,7 @@ async function run() {
 
   // Save structured experiment log
   const { id, filePath: expPath } = saveExperiment({
+    id: experimentId,
     matrixResults,
     promptName,
     tag: experimentTag,

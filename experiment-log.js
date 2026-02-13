@@ -50,9 +50,9 @@ function generateExperimentId() {
   return `exp-${date}-${time}`;
 }
 
-function saveExperiment({ matrixResults, promptName, tag, preprocessing, reportMarkdown, outputDir }) {
+function saveExperiment({ id, matrixResults, promptName, tag, preprocessing, reportMarkdown, outputDir }) {
   const now = new Date();
-  const id = generateExperimentId();
+  if (!id) id = generateExperimentId();
   const dir = outputDir || EXPERIMENTS_DIR;
 
   const images = [...new Set(matrixResults.map((r) => r.file))];
@@ -97,4 +97,4 @@ function loadAllExperiments(dir) {
     .sort((a, b) => a.timestamp.localeCompare(b.timestamp));
 }
 
-module.exports = { computeSummary, saveExperiment, loadAllExperiments, EXPERIMENTS_DIR };
+module.exports = { computeSummary, generateExperimentId, saveExperiment, loadAllExperiments, EXPERIMENTS_DIR };

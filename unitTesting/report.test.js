@@ -215,4 +215,77 @@ describe("generateReport()", () => {
     const report = generateReport(results, "v2");
     assert.ok(report.includes("| File | Client | Gemini 2.0 Flash | OpenAI GPT-4o |"));
   });
+
+  it("includes experiment ID in markdown when provided", () => {
+    const results = [
+      {
+        file: "test.png",
+        provider: "TestProvider",
+        status: "OK",
+        durationMs: 100,
+        comparison: { client: "C", correctCount: 13, totalFields: 13, results: [] },
+      },
+    ];
+
+    const report = generateReport(results, "v2", "exp-2026-02-13-1700");
+    assert.ok(report.includes("Experiment: **exp-2026-02-13-1700**"));
+  });
+
+  it("omits experiment line when no ID provided", () => {
+    const results = [
+      {
+        file: "test.png",
+        provider: "TestProvider",
+        status: "OK",
+        durationMs: 100,
+        comparison: { client: "C", correctCount: 13, totalFields: 13, results: [] },
+      },
+    ];
+
+    const report = generateReport(results, "v2");
+    assert.equal(report.includes("Experiment:"), false);
+  });
+});
+
+describe("bidirectional pairing — report <-> experiment", () => {
+  let tmpDir;
+
+  afterEach(() => {
+    if (tmpDir && fs.existsSync(tmpDir)) {
+      fs.rmSync(tmpDir, { recursive: true });
+    }
+  });
+
+  it("experiment JSON contains the report markdown with its own ID embedded", () => {
+    const { generateExperimentId, saveExperiment } = require("../experiment-log");
+    tmpDir = path.join(os.tmpdir(), `pair-test-${Date.now()}`);
+
+    const fakeResults = [
+      {
+        file: "test.png",
+        provider: "Gemini",
+        status: "OK",
+        durationMs: 100,
+        comparison: { client: "C", correctCount: 13, totalFields: 13, results: [] },
+      },
+    ];
+
+    // Same flow as run-matrix.js: generate ID, pass to both
+    const expId = generateExperimentId();
+    const report = generateReport(fakeResults, "v2", expId);
+    const { filePath } = saveExperiment({
+      id: expId,
+      matrixResults: fakeResults,
+      promptName: "v2",
+      reportMarkdown: report,
+      outputDir: tmpDir,
+    });
+
+    const exp = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+
+    // report markdown contains the experiment ID
+    assert.ok(exp.reportMarkdown.includes(`Experiment: **${expId}**`));
+    // experiment ID matches
+    assert.equal(exp.id, expId);
+  });
 });

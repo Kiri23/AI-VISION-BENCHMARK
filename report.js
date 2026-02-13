@@ -1,4 +1,4 @@
-function generateReport(matrixResults, promptName) {
+function generateReport(matrixResults, promptName, experimentId) {
   const lines = [];
   const timestamp = new Date().toISOString().replace('T', ' ').slice(0, 19);
 
@@ -6,6 +6,9 @@ function generateReport(matrixResults, promptName) {
   lines.push('');
   lines.push(`Generated: ${timestamp}`);
   lines.push(`Prompt: **${promptName}**`);
+  if (experimentId) {
+    lines.push(`Experiment: **${experimentId}**`);
+  }
   lines.push('');
 
   // --- Summary Table ---

@@ -20,22 +20,32 @@ Windmar needs to extract 13 months of kWh consumption + cost-per-kWh from LUMA b
 ## Architecture
 
 ```
-run-matrix.js          ← Main entry: loops files × providers, generates markdown report
-├── ground-truth.json  ← Expected values per sample file (month, kwh, costPerKwh)
-├── prompt.js          ← Loads versioned prompt from prompts/ (latest by default, or --prompt=vN)
-├── compare.js         ← Compares API output against ground truth, scores per-field
-├── report.js          ← Generates markdown summary + detail tables
+run-matrix.js            ← Main entry: loops files × providers, generates report + experiment log
+├── ground-truth.json    ← Expected values per sample file (month, kwh, costPerKwh)
+├── prompt.js            ← Loads versioned prompt from prompts/ (latest by default, or --prompt=vN)
+├── compare.js           ← Compares API output against ground truth, scores per-field
+├── report.js            ← Generates markdown summary + detail tables, archives previous reports
+├── experiment-log.js    ← Saves/loads structured JSON experiment logs
+├── experiment-compare.js ← Reads all experiment logs, prints comparison table
 ├── providers/
-│   ├── index.js       ← Registry of active providers (array export)
-│   ├── gemini.js      ← Google GenAI SDK, uses structured JSON output schema
-│   ├── openai.js      ← OpenAI SDK, uses json_schema response format
-│   └── claude.js      ← Anthropic SDK, manual JSON parsing (no structured output)
+│   ├── index.js         ← Registry of active providers (array export)
+│   ├── gemini.js        ← Google GenAI SDK, uses structured JSON output schema
+│   ├── openai.js        ← OpenAI SDK, uses json_schema response format
+│   └── claude.js        ← Anthropic SDK, manual JSON parsing (no structured output)
 ├── prompts/
-│   ├── v1.js          ← Initial prompt
-│   └── v2.js          ← Current prompt (two-chart layout description)
+│   ├── v1.js            ← Initial prompt
+│   └── v2.js            ← Current prompt (two-chart layout description)
 ├── script/
-│   └── run-single.js  ← Quick test: one provider × one file
-└── sample/            ← Test images (phone photos at various angles/lighting + PDF-extracted PNGs)
+│   └── run-single.js    ← Quick test: one provider × one file
+├── unitTesting/         ← Unit tests (node:test)
+│   ├── compare.test.js  ← Tests for scoring logic
+│   ├── experiment-log.test.js ← Tests for experiment log (computation + file I/O)
+│   └── report.test.js   ← Tests for report generation + archiving + bidirectional pairing
+├── results/
+│   ├── report.md        ← Latest report (overwritten each run)
+│   ├── archive/         ← Previous reports (auto-archived with timestamp+prompt+models)
+│   └── experiments/     ← JSON experiment logs (one per run, never overwritten)
+└── sample/              ← Test images (phone photos at various angles/lighting + PDF-extracted PNGs)
 ```
 
 ## Key Design Decisions
@@ -44,6 +54,19 @@ run-matrix.js          ← Main entry: loops files × providers, generates markd
 - **Structured JSON output**: Gemini and OpenAI use their native JSON schema enforcement. Claude doesn't support it natively, so the prompt is appended with schema instructions and the response is manually parsed.
 - **Comparison is per-field**: each month entry must match on month label, kWh (exact), and costPerKwh (within $0.01 tolerance). A month only counts as "correct" if all three match.
 - **Reports auto-archive**: running the matrix moves the previous `results/report.md` to `results/archive/` with a timestamp + prompt version + provider names in the filename.
+- **Experiment tracking**: each run saves a JSON log to `results/experiments/` with structured data (summary stats, raw results, report markdown). Report and experiment are bidirectionally linked — the report contains the experiment ID, the experiment JSON contains the full report markdown.
+
+## CLI Flags
+
+- `--prompt=vN` — use a specific prompt version (default: latest)
+- `--tag=my-label` — human-readable experiment label (default: auto-generated as `{promptVersion}-{imageCount}img`, e.g. `v2-18img`)
+- `--preprocessing=sharpen` — label for what preprocessing was applied (default: `none`, for future use)
+
+## npm Scripts
+
+- `npm start` — run the full matrix (all images × all providers)
+- `npm test` — run unit tests
+- `npm run compare-experiments` — print comparison table across all experiment logs
 
 ## Adding a New Provider
 
