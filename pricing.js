@@ -2,6 +2,7 @@
 // Source: provider pricing pages as of 2025. Update as needed.
 const PRICING = {
   "Gemini 2.0 Flash":        { inputPerMTok: 0.10, outputPerMTok: 0.40 },
+  "Gemini 2.5 Flash":        { inputPerMTok: 0.15, outputPerMTok: 0.60 },
   "Gemini 3 Flash (Preview)": { inputPerMTok: 0.50, outputPerMTok: 3.00 },
   "OpenAI GPT-4o":        { inputPerMTok: 2.50, outputPerMTok: 10.00 },
   "OpenAI GPT-4.1 Mini":  { inputPerMTok: 0.40, outputPerMTok: 1.60 },

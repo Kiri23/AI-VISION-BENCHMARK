@@ -391,7 +391,7 @@ describe("saveExperiment() — file I/O", () => {
     assert.equal(path.basename(filePath), `${id}.json`);
   });
 
-  it("stores reportMarkdown in the JSON when provided", () => {
+  it("does not store reportMarkdown in the JSON", () => {
     tmpDir = path.join(os.tmpdir(), `exp-test-${Date.now()}`);
     const fakeReport = "# Report\n\n| File | Client | Gemini |\n| --- | --- | --- |\n| test.png | C | 13/13 |";
 
@@ -403,20 +403,7 @@ describe("saveExperiment() — file I/O", () => {
     });
 
     const exp = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    assert.equal(exp.reportMarkdown, fakeReport);
-  });
-
-  it("reportMarkdown is null when not provided", () => {
-    tmpDir = path.join(os.tmpdir(), `exp-test-${Date.now()}`);
-
-    const { filePath } = saveExperiment({
-      matrixResults: FAKE_RESULTS,
-      promptName: "v2",
-      outputDir: tmpDir,
-    });
-
-    const exp = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-    assert.equal(exp.reportMarkdown, null);
+    assert.equal(exp.reportMarkdown, undefined);
   });
 });
 

@@ -256,7 +256,7 @@ describe("bidirectional pairing — report <-> experiment", () => {
     }
   });
 
-  it("experiment JSON contains the report markdown with its own ID embedded", () => {
+  it("experiment JSON has matching ID when created with explicit ID", () => {
     const { generateExperimentId, saveExperiment } = require("../experiment-log");
     tmpDir = path.join(os.tmpdir(), `pair-test-${Date.now()}`);
 
@@ -270,22 +270,22 @@ describe("bidirectional pairing — report <-> experiment", () => {
       },
     ];
 
-    // Same flow as run-matrix.js: generate ID, pass to both
     const expId = generateExperimentId();
     const report = generateReport(fakeResults, "v2", expId);
     const { filePath } = saveExperiment({
       id: expId,
       matrixResults: fakeResults,
       promptName: "v2",
-      reportMarkdown: report,
       outputDir: tmpDir,
     });
 
     const exp = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
-    // report markdown contains the experiment ID
-    assert.ok(exp.reportMarkdown.includes(`Experiment: **${expId}**`));
     // experiment ID matches
     assert.equal(exp.id, expId);
+    // report markdown is not stored in experiment
+    assert.equal(exp.reportMarkdown, undefined);
+    // report still contains the experiment ID
+    assert.ok(report.includes(`Experiment: **${expId}**`));
   });
 });

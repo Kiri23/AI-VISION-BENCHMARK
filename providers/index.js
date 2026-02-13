@@ -1,4 +1,5 @@
 const gemini = require('./gemini');
+const gemini25Flash = require('./gemini-2.5-flash');
 const gemini3Flash = require('./gemini-3-flash');
 const openai = require('./openai');
 const openai41Mini = require('./openai-4.1-mini');
@@ -8,6 +9,7 @@ const claude = require('./claude');
 
 const providers = [
   gemini,
+  gemini25Flash,
   gemini3Flash,
   // openai,
   openai41Mini,
