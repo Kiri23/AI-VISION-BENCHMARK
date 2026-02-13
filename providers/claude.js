@@ -23,7 +23,7 @@ module.exports = {
               type: contentType,
               source: { type: 'base64', media_type: mediaType, data: base64 },
             },
-            { type: 'text', text: EXTRACTION_PROMPT + '\n\nRespond with ONLY a JSON object (no markdown, no code fences) using this exact schema:\n{"months":[{"month":"string","kwh":number,"costPerKwh":number}]}' },
+            { type: 'text', text: EXTRACTION_PROMPT + '\n\nRespond with ONLY a JSON object (no markdown, no code fences) using this exact schema:\n{"chartComplete":boolean,"months":[{"month":"string","kwh":number,"costPerKwh":number}]}' },
           ],
         },
       ],

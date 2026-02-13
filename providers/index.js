@@ -4,7 +4,7 @@ const claude = require('./claude');
 
 const providers = [
   gemini,
-  openai,
+  // openai,
   // claude,
 ];
 

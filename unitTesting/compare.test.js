@@ -146,6 +146,35 @@ describe("compare()", () => {
     assert.match(result.error, /Expected 13 months, got 2/);
   });
 
+  it("chartComplete false returns warning with 0 correct", () => {
+    const incomplete = {
+      chartComplete: false,
+      months: [
+        { month: "oct-24", kwh: 919, costPerKwh: 0.24 },
+        { month: "nov", kwh: 735, costPerKwh: 0.24 },
+        { month: "dic", kwh: 308, costPerKwh: 0.24 },
+        { month: "ene", kwh: 511, costPerKwh: 0.26 },
+        { month: "feb", kwh: 377, costPerKwh: 0.26 },
+        { month: "mar", kwh: 430, costPerKwh: 0.26 },
+        { month: "abr", kwh: 461, costPerKwh: 0.26 },
+        { month: "may", kwh: 465, costPerKwh: 0.26 },
+        { month: "jun", kwh: 516, costPerKwh: 0.26 },
+        { month: "jul", kwh: 556, costPerKwh: 0.25 },
+        { month: "ago-25", kwh: 835, costPerKwh: 0.25 },
+      ],
+    };
+
+    const result = compare("image.png", incomplete);
+    assert.equal(result.correctCount, 0);
+    assert.equal(result.totalFields, 13);
+    assert.equal(result.chartComplete, false);
+    assert.ok(result.warning);
+    assert.match(result.warning, /Incomplete chart detected/);
+    assert.match(result.warning, /11 months/);
+    assert.deepEqual(result.results, []);
+    assert.equal(result.error, undefined);
+  });
+
   it("returns error for unknown filename", () => {
     const result = compare("nonexistent.png", { months: [] });
     assert.ok(result.error);

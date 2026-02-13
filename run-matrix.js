@@ -91,9 +91,13 @@ async function run() {
         });
 
         const costStr = estimatedCost != null ? ` $${estimatedCost.toFixed(6)}` : '';
-        console.log(
-          `  → ${comparison.correctCount}/${comparison.totalFields} correct (${durationMs}ms)${costStr}`,
-        );
+        if (comparison.chartComplete === false) {
+          console.log(`  → INCOMPLETE: ${comparison.warning} (${durationMs}ms)${costStr}`);
+        } else {
+          console.log(
+            `  → ${comparison.correctCount}/${comparison.totalFields} correct (${durationMs}ms)${costStr}`,
+          );
+        }
       } catch (err) {
         const durationMs = Date.now() - start;
         matrixResults.push({

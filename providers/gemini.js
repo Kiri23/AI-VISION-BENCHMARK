@@ -17,8 +17,9 @@ const responseSchema = {
         required: ['month', 'kwh', 'costPerKwh'],
       },
     },
+    chartComplete: { type: Type.BOOLEAN },
   },
-  required: ['months'],
+  required: ['months', 'chartComplete'],
 };
 
 module.exports = {

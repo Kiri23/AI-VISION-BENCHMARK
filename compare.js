@@ -11,6 +11,17 @@ function compare(filename, apiResult) {
   const expected = truth.months;
   const actual = apiResult.months || [];
 
+  if (apiResult.chartComplete === false) {
+    return {
+      warning: `Incomplete chart detected (got ${actual.length} months)`,
+      client: truth.client,
+      totalFields: expected.length,
+      correctCount: 0,
+      results: [],
+      chartComplete: false,
+    };
+  }
+
   if (actual.length !== expected.length) {
     return {
       error: `Expected ${expected.length} months, got ${actual.length}`,
