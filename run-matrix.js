@@ -4,9 +4,16 @@ require("dotenv").config({ path: path.join(__dirname, ".env") });
 
 const providers = require("./providers");
 const { compare } = require("./compare");
-const { generateReport } = require("./report");
+const { generateReport, archiveReport } = require("./report");
 const { promptName } = require("./prompt");
+const { saveExperiment } = require("./experiment-log");
 const groundTruth = require("./ground-truth.json");
+
+// Parse CLI flags
+const tagArg = process.argv.find((a) => a.startsWith("--tag="));
+const preprocArg = process.argv.find((a) => a.startsWith("--preprocessing="));
+const experimentTag = tagArg ? tagArg.split("=")[1] : null;
+const experimentPreprocessing = preprocArg ? preprocArg.split("=")[1] : "none";
 
 const SAMPLE_DIR = path.join(__dirname, "sample");
 const RESULTS_DIR = path.join(__dirname, "results");
@@ -102,38 +109,21 @@ async function run() {
   }
 
   const reportPath = path.join(RESULTS_DIR, "report.md");
-
-  // Archive previous report if it exists
-  if (fs.existsSync(reportPath)) {
-    const archiveDir = path.join(RESULTS_DIR, "archive");
-    if (!fs.existsSync(archiveDir)) {
-      fs.mkdirSync(archiveDir, { recursive: true });
-    }
-    const stat = fs.statSync(reportPath);
-    const d = stat.mtime;
-    const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-    const timeStr = `${String(d.getHours()).padStart(2, "0")}${String(d.getMinutes()).padStart(2, "0")}`;
-    // Extract providers from the previous report's summary table header
-    const prevContent = fs.readFileSync(reportPath, "utf-8");
-    const headerMatch = prevContent.match(/\| File \| Client \|(.+)\|/);
-    let modelStr = "unknown";
-    if (headerMatch) {
-      modelStr = headerMatch[1]
-        .split("|")
-        .map((s) => s.trim())
-        .filter(Boolean)
-        .map((name) => name.split(" ")[0].toLowerCase())
-        .join("-");
-    }
-    // Extract prompt version from the previous report
-    const promptMatch = prevContent.match(/Prompt: \*\*(.+?)\*\*/);
-    const prevPrompt = promptMatch ? promptMatch[1] : 'unknown';
-    fs.renameSync(reportPath, path.join(archiveDir, `${dateStr}-${timeStr}-${prevPrompt}-${modelStr}-report.md`));
-  }
+  const archiveDir = path.join(RESULTS_DIR, "archive");
+  archiveReport(reportPath, archiveDir);
 
   fs.writeFileSync(reportPath, report);
   console.log(`\nReport written to: ${reportPath}\n`);
   console.log(report);
+
+  // Save structured experiment log
+  const { id, filePath: expPath } = saveExperiment({
+    matrixResults,
+    promptName,
+    tag: experimentTag,
+    preprocessing: experimentPreprocessing,
+  });
+  console.log(`Experiment log saved: ${expPath} (${id})\n`);
 }
 
 run().catch((err) => {

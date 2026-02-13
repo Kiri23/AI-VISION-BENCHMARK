@@ -93,4 +93,41 @@ function generateReport(matrixResults, promptName) {
   return lines.join('\n');
 }
 
-module.exports = { generateReport };
+function archiveReport(reportPath, archiveDir) {
+  const fs = require('fs');
+  const path = require('path');
+
+  if (!fs.existsSync(reportPath)) return null;
+
+  if (!fs.existsSync(archiveDir)) {
+    fs.mkdirSync(archiveDir, { recursive: true });
+  }
+
+  const stat = fs.statSync(reportPath);
+  const d = stat.mtime;
+  const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  const timeStr = `${String(d.getHours()).padStart(2, '0')}${String(d.getMinutes()).padStart(2, '0')}`;
+
+  const prevContent = fs.readFileSync(reportPath, 'utf-8');
+  const headerMatch = prevContent.match(/\| File \| Client \|(.+)\|/);
+  let modelStr = 'unknown';
+  if (headerMatch) {
+    modelStr = headerMatch[1]
+      .split('|')
+      .map((s) => s.trim())
+      .filter(Boolean)
+      .map((name) => name.split(' ')[0].toLowerCase())
+      .join('-');
+  }
+
+  const promptMatch = prevContent.match(/Prompt: \*\*(.+?)\*\*/);
+  const prevPrompt = promptMatch ? promptMatch[1] : 'unknown';
+
+  const archiveName = `${dateStr}-${timeStr}-${prevPrompt}-${modelStr}-report.md`;
+  const archivePath = path.join(archiveDir, archiveName);
+  fs.renameSync(reportPath, archivePath);
+
+  return archivePath;
+}
+
+module.exports = { generateReport, archiveReport };

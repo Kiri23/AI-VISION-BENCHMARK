@@ -4,7 +4,9 @@
   "description": "LUMA bill vision-API benchmarking harness",
   "scripts": {
     "start": "node run-matrix.js",
+    "test": "node --test 'unitTesting/*.test.js'",
     "test:matrix": "node run-matrix.js",
+    "compare-experiments": "node experiment-compare.js",
     "single": "node script/run-single.js openai",
     "single:file": "node script/run-single.js gemini lumaBill.pdf"
   },
