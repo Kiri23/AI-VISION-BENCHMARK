@@ -5,7 +5,7 @@ const claude = require('./claude');
 const providers = [
   gemini,
   openai,
-  claude,
+  // claude,
 ];
 
 module.exports = providers;

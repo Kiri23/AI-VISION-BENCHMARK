@@ -5,6 +5,7 @@ require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
 const providers = require("./providers");
 const { compare } = require("./compare");
 const { generateReport } = require("./report");
+const { promptName } = require("./prompt");
 const groundTruth = require("./ground-truth.json");
 
 const SAMPLE_DIR = path.join(__dirname, "..", "sample");
@@ -31,6 +32,11 @@ async function run() {
     const filePath = path.join(SAMPLE_DIR, file);
     const ext = path.extname(file).toLowerCase();
     const mimeType = MIME_MAP[ext];
+
+    if (groundTruth[file].skip) {
+      console.log(`SKIP: ${file} (marked skip in ground-truth.json)`);
+      continue;
+    }
 
     if (!fs.existsSync(filePath)) {
       console.log(`SKIP: ${file} not found in ${SAMPLE_DIR}`);
@@ -89,7 +95,7 @@ async function run() {
     }
   }
 
-  const report = generateReport(matrixResults);
+  const report = generateReport(matrixResults, promptName);
 
   if (!fs.existsSync(RESULTS_DIR)) {
     fs.mkdirSync(RESULTS_DIR, { recursive: true });
@@ -119,7 +125,10 @@ async function run() {
         .map((name) => name.split(" ")[0].toLowerCase())
         .join("-");
     }
-    fs.renameSync(reportPath, path.join(archiveDir, `${dateStr}-${timeStr}-${modelStr}-report.md`));
+    // Extract prompt version from the previous report
+    const promptMatch = prevContent.match(/Prompt: \*\*(.+?)\*\*/);
+    const prevPrompt = promptMatch ? promptMatch[1] : 'unknown';
+    fs.renameSync(reportPath, path.join(archiveDir, `${dateStr}-${timeStr}-${prevPrompt}-${modelStr}-report.md`));
   }
 
   fs.writeFileSync(reportPath, report);

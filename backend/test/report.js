@@ -1,10 +1,11 @@
-function generateReport(matrixResults) {
+function generateReport(matrixResults, promptName) {
   const lines = [];
   const timestamp = new Date().toISOString().replace('T', ' ').slice(0, 19);
 
   lines.push('# LUMA kWh Extraction — Test Matrix Report');
   lines.push('');
   lines.push(`Generated: ${timestamp}`);
+  lines.push(`Prompt: **${promptName}**`);
   lines.push('');
 
   // --- Summary Table ---

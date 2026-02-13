@@ -16,18 +16,21 @@ const PROVIDERS = {
   claude: () => require('../providers/claude'),
 };
 
-const [providerArg, fileArg] = process.argv.slice(2);
+// Separate --flags from positional args
+const positionalArgs = process.argv.slice(2).filter(a => !a.startsWith('--'));
+const [providerArg, fileArg] = positionalArgs;
 
 if (!providerArg) {
-  console.log('Usage: node run-single.js <provider> [file]');
+  console.log('Usage: node run-single.js <provider> [file] [--prompt=vN]');
   console.log('');
   console.log('Providers:', Object.keys(PROVIDERS).join(', '));
   console.log('Files:     any file in backend/sample/ (default: lumaBill.pdf)');
+  console.log('Options:   --prompt=vN  use a specific prompt version (default: latest)');
   console.log('');
   console.log('Examples:');
   console.log('  node run-single.js openai');
   console.log('  node run-single.js gemini image.png');
-  console.log('  node run-single.js claude lumaBill.pdf');
+  console.log('  node run-single.js claude lumaBill.pdf --prompt=v1');
   process.exit(0);
 }
 
@@ -47,9 +50,11 @@ if (!mimeType) {
   process.exit(1);
 }
 
+const { promptName } = require('../prompt');
+
 (async () => {
   const provider = loaderFn();
-  console.log(`Running: ${file} × ${provider.name}...`);
+  console.log(`Running: ${file} × ${provider.name} (prompt: ${promptName})...`);
   const start = Date.now();
 
   try {

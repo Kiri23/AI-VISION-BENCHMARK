@@ -1,9 +1,26 @@
-const EXTRACTION_PROMPT =
-  'This is a LUMA/AEE electricity bill PDF. Focus ONLY on the "HISTORIAL DE CONSUMO (KWH)" page ' +
-  'which shows 13 months of data in two charts: a kWh bar chart and a "Costo por kWh" line chart. ' +
-  'Ignore all other pages. For each of the 13 months, read the exact number printed above each bar ' +
-  'in the kWh chart (do NOT estimate from bar height) and the exact dollar amount printed above ' +
-  'the cost line chart. Return the month label exactly as shown (e.g. "ene-25", "feb", "mar"). ' +
-  'Return all 13 months in left-to-right chronological order.';
+const fs = require('fs');
+const path = require('path');
 
-module.exports = { EXTRACTION_PROMPT };
+const PROMPTS_DIR = path.join(__dirname, 'prompts');
+
+function loadPrompt(version) {
+  if (version) {
+    return require(path.join(PROMPTS_DIR, `${version}.js`));
+  }
+  // Default: find latest version file (highest number)
+  const files = fs.readdirSync(PROMPTS_DIR)
+    .filter(f => /^v\d+\.js$/.test(f))
+    .sort((a, b) => {
+      const numA = parseInt(a.match(/\d+/)[0]);
+      const numB = parseInt(b.match(/\d+/)[0]);
+      return numB - numA;
+    });
+  return require(path.join(PROMPTS_DIR, files[0]));
+}
+
+// Parse --prompt=vN from process.argv
+const promptArg = process.argv.find(a => a.startsWith('--prompt='));
+const version = promptArg ? promptArg.split('=')[1] : null;
+const prompt = loadPrompt(version);
+
+module.exports = { EXTRACTION_PROMPT: prompt.EXTRACTION_PROMPT, promptName: prompt.name };

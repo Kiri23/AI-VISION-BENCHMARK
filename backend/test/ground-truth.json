@@ -18,6 +18,7 @@
     ]
   },
   "lumaBill.pdf": {
+    "skip": true,
     "client": "Client PDF",
     "months": [
       { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
