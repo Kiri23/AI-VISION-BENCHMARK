@@ -11,7 +11,7 @@ const providers = [
   gemini3Flash,
   // openai,
   openai41Mini,
-  openai41Nano,
+  // openai41Nano,
   openai52,
   claude,
 ];

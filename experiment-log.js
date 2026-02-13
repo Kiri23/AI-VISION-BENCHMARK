@@ -79,9 +79,8 @@ function saveExperiment({ id, matrixResults, promptName, tag, preprocessing, rep
     imageCount: images.length,
     images,
     providers,
-    results: matrixResults,
     summary,
-    reportMarkdown: reportMarkdown || null,
+    results: matrixResults,
   };
 
   if (!fs.existsSync(dir)) {

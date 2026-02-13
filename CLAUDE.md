@@ -54,7 +54,7 @@ run-matrix.js            ← Main entry: loops files × providers, generates rep
 - **Structured JSON output**: Gemini and OpenAI use their native JSON schema enforcement. Claude doesn't support it natively, so the prompt is appended with schema instructions and the response is manually parsed.
 - **Comparison is per-field**: each month entry must match on month label, kWh (exact), and costPerKwh (within $0.01 tolerance). A month only counts as "correct" if all three match.
 - **Reports auto-archive**: running the matrix moves the previous `results/report.md` to `results/archive/` with a timestamp + prompt version + provider names in the filename.
-- **Experiment tracking**: each run saves a JSON log to `results/experiments/` with structured data (summary stats, raw results, report markdown). Report and experiment are bidirectionally linked — the report contains the experiment ID, the experiment JSON contains the full report markdown.
+- **Experiment tracking**: each run saves a JSON log to `results/experiments/` with structured data (summary stats, raw results). Report markdown is NOT stored in experiment JSON (removed for performance/memory reasons). The report file references the experiment ID, but the link is one-directional.
 
 ## CLI Flags
 
