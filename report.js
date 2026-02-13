@@ -37,11 +37,33 @@ function generateReport(matrixResults, promptName, experimentId) {
         cells.push('ERROR');
       } else {
         const c = result.comparison;
-        cells.push(`${c.correctCount}/${c.totalFields} (${result.durationMs}ms)`);
+        const costStr = result.estimatedCost != null ? ` · $${result.estimatedCost.toFixed(4)}` : '';
+        cells.push(`${c.correctCount}/${c.totalFields} (${result.durationMs}ms${costStr})`);
       }
     }
 
     lines.push('| ' + cells.join(' | ') + ' |');
+  }
+
+  // Cost totals per provider
+  const costTotals = {};
+  for (const r of matrixResults) {
+    if (r.estimatedCost != null) {
+      costTotals[r.provider] = (costTotals[r.provider] || 0) + r.estimatedCost;
+    }
+  }
+
+  if (Object.keys(costTotals).length > 0) {
+    lines.push('');
+    lines.push('**Estimated cost:**');
+    let grandTotal = 0;
+    for (const provName of providerNames) {
+      if (costTotals[provName] != null) {
+        lines.push(`- ${provName}: $${costTotals[provName].toFixed(4)}`);
+        grandTotal += costTotals[provName];
+      }
+    }
+    lines.push(`- **Total: $${grandTotal.toFixed(4)}**`);
   }
 
   lines.push('');

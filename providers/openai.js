@@ -56,6 +56,10 @@ module.exports = {
       },
     });
 
-    return JSON.parse(response.choices[0].message.content);
+    const parsed = JSON.parse(response.choices[0].message.content);
+    const usage = response.usage
+      ? { inputTokens: response.usage.prompt_tokens || 0, outputTokens: response.usage.completion_tokens || 0 }
+      : null;
+    return { ...parsed, usage };
   },
 };

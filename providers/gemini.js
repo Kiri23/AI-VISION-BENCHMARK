@@ -43,6 +43,10 @@ module.exports = {
       },
     });
 
-    return JSON.parse(response.text);
+    const parsed = JSON.parse(response.text);
+    const usage = response.usageMetadata
+      ? { inputTokens: response.usageMetadata.promptTokenCount || 0, outputTokens: response.usageMetadata.candidatesTokenCount || 0 }
+      : null;
+    return { ...parsed, usage };
   },
 };

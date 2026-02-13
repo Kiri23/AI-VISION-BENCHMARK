@@ -32,6 +32,10 @@ module.exports = {
     let text = response.content[0].text;
     // Strip markdown code fences if present
     text = text.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
-    return JSON.parse(text);
+    const parsed = JSON.parse(text);
+    const usage = response.usage
+      ? { inputTokens: response.usage.input_tokens || 0, outputTokens: response.usage.output_tokens || 0 }
+      : null;
+    return { ...parsed, usage };
   },
 };

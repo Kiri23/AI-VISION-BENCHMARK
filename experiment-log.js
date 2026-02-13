@@ -13,6 +13,7 @@ function computeSummary(matrixResults) {
         totalFields: 0,
         totalDurationMs: 0,
         imagesProcessed: 0,
+        totalEstimatedCost: 0,
       };
     }
 
@@ -23,11 +24,18 @@ function computeSummary(matrixResults) {
       entry.totalFields += r.comparison.totalFields;
       entry.totalDurationMs += r.durationMs || 0;
       entry.imagesProcessed++;
+      if (r.estimatedCost != null) {
+        entry.totalEstimatedCost += r.estimatedCost;
+      }
     }
   }
 
+  const providers = Object.entries(byProvider);
+  if (providers.length === 0) return {};
+
   const summary = {};
-  for (const [provider, data] of Object.entries(byProvider)) {
+  let totalCost = 0;
+  for (const [provider, data] of providers) {
     summary[provider] = {
       avgAccuracy: data.totalFields > 0 ? data.totalCorrect / data.totalFields : 0,
       totalCorrect: data.totalCorrect,
@@ -37,8 +45,11 @@ function computeSummary(matrixResults) {
           ? Math.round(data.totalDurationMs / data.imagesProcessed)
           : 0,
       imagesProcessed: data.imagesProcessed,
+      totalEstimatedCost: Math.round(data.totalEstimatedCost * 1_000_000) / 1_000_000,
     };
+    totalCost += data.totalEstimatedCost;
   }
+  summary._totalCost = Math.round(totalCost * 1_000_000) / 1_000_000;
 
   return summary;
 }

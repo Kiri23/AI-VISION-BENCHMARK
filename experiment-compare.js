@@ -33,11 +33,18 @@ function run() {
     { header: "Images", width: 6, align: "right" },
     { header: "Prompt", width: 6, align: "left" },
     { header: "Preprocess", width: 12, align: "left" },
-    ...allProviders.map((p) => ({
-      header: p.split(" ")[0] + " Avg%",
-      width: 14,
-      align: "right",
-    })),
+    ...allProviders.flatMap((p) => [
+      {
+        header: p.split(" ")[0] + " Avg%",
+        width: 14,
+        align: "right",
+      },
+      {
+        header: p.split(" ")[0] + " Cost",
+        width: 12,
+        align: "right",
+      },
+    ]),
   ];
 
   // Print header
@@ -65,9 +72,12 @@ function run() {
       String(exp.imageCount),
       exp.promptVersion,
       exp.preprocessing || "none",
-      ...allProviders.map((p) => {
+      ...allProviders.flatMap((p) => {
         const s = exp.summary[p];
-        return s ? formatPercent(s.avgAccuracy) : "-";
+        return [
+          s ? formatPercent(s.avgAccuracy) : "-",
+          s && s.totalEstimatedCost ? "$" + s.totalEstimatedCost.toFixed(4) : "-",
+        ];
       }),
     ];
 

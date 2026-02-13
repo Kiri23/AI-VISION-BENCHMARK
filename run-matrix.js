@@ -7,6 +7,7 @@ const { compare } = require("./compare");
 const { generateReport, archiveReport } = require("./report");
 const { promptName } = require("./prompt");
 const { generateExperimentId, saveExperiment } = require("./experiment-log");
+const { calculateCost } = require("./pricing");
 const groundTruth = require("./ground-truth.json");
 
 // Parse CLI flags
@@ -76,6 +77,8 @@ async function run() {
         const result = await provider.extract(filePath, mimeType);
         const durationMs = Date.now() - start;
         const comparison = compare(file, result);
+        const usage = result.usage || null;
+        const estimatedCost = calculateCost(provider.name, usage);
 
         matrixResults.push({
           file,
@@ -83,10 +86,13 @@ async function run() {
           status: "OK",
           durationMs,
           comparison,
+          usage,
+          estimatedCost,
         });
 
+        const costStr = estimatedCost != null ? ` $${estimatedCost.toFixed(6)}` : '';
         console.log(
-          `  → ${comparison.correctCount}/${comparison.totalFields} correct (${durationMs}ms)`,
+          `  → ${comparison.correctCount}/${comparison.totalFields} correct (${durationMs}ms)${costStr}`,
         );
       } catch (err) {
         const durationMs = Date.now() - start;

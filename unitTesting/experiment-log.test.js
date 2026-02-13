@@ -142,6 +142,80 @@ describe("computeSummary()", () => {
       Math.abs(summary["OpenAI"].avgAccuracy - 10 / 13) < 0.0001,
     );
   });
+
+  it("aggregates totalEstimatedCost per provider", () => {
+    const matrixResults = [
+      {
+        file: "a.png",
+        provider: "P1",
+        status: "OK",
+        durationMs: 1000,
+        comparison: { correctCount: 13, totalFields: 13 },
+        estimatedCost: 0.005,
+      },
+      {
+        file: "b.png",
+        provider: "P1",
+        status: "OK",
+        durationMs: 2000,
+        comparison: { correctCount: 10, totalFields: 13 },
+        estimatedCost: 0.003,
+      },
+      {
+        file: "a.png",
+        provider: "P2",
+        status: "OK",
+        durationMs: 1500,
+        comparison: { correctCount: 12, totalFields: 13 },
+        estimatedCost: 0.05,
+      },
+    ];
+
+    const summary = computeSummary(matrixResults);
+    assert.equal(summary["P1"].totalEstimatedCost, 0.008);
+    assert.equal(summary["P2"].totalEstimatedCost, 0.05);
+    assert.equal(summary._totalCost, 0.058);
+  });
+
+  it("totalEstimatedCost is 0 when no cost data present", () => {
+    const matrixResults = [
+      {
+        file: "a.png",
+        provider: "P1",
+        status: "OK",
+        durationMs: 1000,
+        comparison: { correctCount: 13, totalFields: 13 },
+      },
+    ];
+
+    const summary = computeSummary(matrixResults);
+    assert.equal(summary["P1"].totalEstimatedCost, 0);
+    assert.equal(summary._totalCost, 0);
+  });
+
+  it("_totalCost sums across all providers", () => {
+    const matrixResults = [
+      {
+        file: "a.png",
+        provider: "P1",
+        status: "OK",
+        durationMs: 1000,
+        comparison: { correctCount: 13, totalFields: 13 },
+        estimatedCost: 0.01,
+      },
+      {
+        file: "a.png",
+        provider: "P2",
+        status: "OK",
+        durationMs: 1000,
+        comparison: { correctCount: 13, totalFields: 13 },
+        estimatedCost: 0.02,
+      },
+    ];
+
+    const summary = computeSummary(matrixResults);
+    assert.equal(summary._totalCost, 0.03);
+  });
 });
 
 // --- File I/O tests ---
