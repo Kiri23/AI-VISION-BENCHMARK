@@ -1,0 +1,18 @@
+{
+  "name": "image-recognition",
+  "version": "1.0.0",
+  "description": "LUMA bill vision-API benchmarking harness",
+  "scripts": {
+    "start": "node run-matrix.js",
+    "test:matrix": "node run-matrix.js",
+    "single": "node script/run-single.js openai",
+    "single:file": "node script/run-single.js gemini lumaBill.pdf"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.74.0",
+    "@google/genai": "^1.0.0",
+    "dotenv": "^16.3.1",
+    "openai": "^6.21.0",
+    "pdf-to-img": "^5.0.0"
+  }
+}

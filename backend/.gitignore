@@ -1,9 +1,0 @@
-node_modules/
-uploads/
-.env
-.env.local
-*.log
-npm-debug.log*
-eng.traineddata
-test/results/
-.DS_Store

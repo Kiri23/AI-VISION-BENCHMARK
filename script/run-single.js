@@ -1,7 +1,7 @@
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '..', '..', '.env') });
+require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
 
-const SAMPLE_DIR = path.join(__dirname, '..', '..', 'sample');
+const SAMPLE_DIR = path.join(__dirname, '..', 'sample');
 
 const MIME_MAP = {
   '.png': 'image/png',
@@ -24,7 +24,7 @@ if (!providerArg) {
   console.log('Usage: node run-single.js <provider> [file] [--prompt=vN]');
   console.log('');
   console.log('Providers:', Object.keys(PROVIDERS).join(', '));
-  console.log('Files:     any file in backend/sample/ (default: lumaBill.pdf)');
+  console.log('Files:     any file in sample/ (default: lumaBill.pdf)');
   console.log('Options:   --prompt=vN  use a specific prompt version (default: latest)');
   console.log('');
   console.log('Examples:');

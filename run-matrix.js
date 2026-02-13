@@ -1,6 +1,6 @@
 const path = require("path");
 const fs = require("fs");
-require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
+require("dotenv").config({ path: path.join(__dirname, ".env") });
 
 const providers = require("./providers");
 const { compare } = require("./compare");
@@ -8,7 +8,7 @@ const { generateReport } = require("./report");
 const { promptName } = require("./prompt");
 const groundTruth = require("./ground-truth.json");
 
-const SAMPLE_DIR = path.join(__dirname, "..", "sample");
+const SAMPLE_DIR = path.join(__dirname, "sample");
 const RESULTS_DIR = path.join(__dirname, "results");
 
 const MIME_MAP = {
