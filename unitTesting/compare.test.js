@@ -146,9 +146,8 @@ describe("compare()", () => {
     assert.match(result.error, /Expected 13 months, got 2/);
   });
 
-  it("chartComplete false returns warning with 0 correct", () => {
+  it("wrong month count (11 instead of 13) returns 0 correct with error", () => {
     const incomplete = {
-      chartComplete: false,
       months: [
         { month: "oct-24", kwh: 919, costPerKwh: 0.24 },
         { month: "nov", kwh: 735, costPerKwh: 0.24 },
@@ -167,12 +166,9 @@ describe("compare()", () => {
     const result = compare("image.png", incomplete);
     assert.equal(result.correctCount, 0);
     assert.equal(result.totalFields, 13);
-    assert.equal(result.chartComplete, false);
-    assert.ok(result.warning);
-    assert.match(result.warning, /Incomplete chart detected/);
-    assert.match(result.warning, /11 months/);
+    assert.ok(result.error);
+    assert.match(result.error, /Expected 13 months, got 11/);
     assert.deepEqual(result.results, []);
-    assert.equal(result.error, undefined);
   });
 
   it("returns error for unknown filename", () => {

@@ -94,13 +94,9 @@ if (!loaderFn) {
       if (cost != null) totalCost += cost;
       const costStr = cost != null ? ` · $${cost.toFixed(6)}` : '';
 
-      if (comparison.chartComplete === false) {
-        console.log(`INCOMPLETE (${ms}ms${costStr})`);
-      } else {
-        console.log(`${comparison.correctCount}/${comparison.totalFields} (${ms}ms${costStr})`);
-        totalCorrect += comparison.correctCount;
-        totalFields += comparison.totalFields;
-      }
+      console.log(`${comparison.correctCount}/${comparison.totalFields} (${ms}ms${costStr})`);
+      totalCorrect += comparison.correctCount;
+      totalFields += comparison.totalFields;
       processed++;
     } catch (err) {
       const ms = Date.now() - start;

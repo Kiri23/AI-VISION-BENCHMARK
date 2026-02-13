@@ -19,9 +19,8 @@ const responseSchema = {
         additionalProperties: false,
       },
     },
-    chartComplete: { type: 'boolean' },
   },
-  required: ['months', 'chartComplete'],
+  required: ['months'],
   additionalProperties: false,
 };
 

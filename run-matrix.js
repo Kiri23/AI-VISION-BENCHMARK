@@ -50,13 +50,9 @@ async function runOne(file, provider, filePath, mimeType) {
     const estimatedCost = calculateCost(provider.name, usage);
 
     const costStr = estimatedCost != null ? ` $${estimatedCost.toFixed(6)}` : '';
-    if (comparison.chartComplete === false) {
-      console.log(`  → ${file} × ${provider.name}: INCOMPLETE: ${comparison.warning} (${durationMs}ms)${costStr}`);
-    } else {
-      console.log(
-        `  → ${file} × ${provider.name}: ${comparison.correctCount}/${comparison.totalFields} correct (${durationMs}ms)${costStr}`,
-      );
-    }
+    console.log(
+      `  → ${file} × ${provider.name}: ${comparison.correctCount}/${comparison.totalFields} correct (${durationMs}ms)${costStr}`,
+    );
 
     return {
       file,

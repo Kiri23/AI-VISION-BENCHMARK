@@ -38,11 +38,7 @@ function generateReport(matrixResults, promptName, experimentId) {
       } else {
         const c = result.comparison;
         const costStr = result.estimatedCost != null ? ` · $${result.estimatedCost.toFixed(4)}` : '';
-        if (c.chartComplete === false) {
-          cells.push(`INCOMPLETE (${c.warning})`);
-        } else {
-          cells.push(`${c.correctCount}/${c.totalFields} (${result.durationMs}ms${costStr})`);
-        }
+        cells.push(`${c.correctCount}/${c.totalFields} (${result.durationMs}ms${costStr})`);
       }
     }
 
