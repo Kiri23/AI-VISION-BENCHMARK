@@ -2,345 +2,8923 @@
   "image.png": {
     "client": "Client imagen",
     "months": [
-      { "month": "ago-24", "kwh": 808, "costPerKwh": 0.24 },
-      { "month": "sep", "kwh": 634, "costPerKwh": 0.24 },
-      { "month": "oct", "kwh": 919, "costPerKwh": 0.24 },
-      { "month": "nov", "kwh": 735, "costPerKwh": 0.24 },
-      { "month": "dic", "kwh": 308, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 511, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 377, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 430, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 461, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 465, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 516, "costPerKwh": 0.26 },
-      { "month": "jul", "kwh": 556, "costPerKwh": 0.25 },
-      { "month": "ago-25", "kwh": 835, "costPerKwh": 0.25 }
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
     ]
   },
   "lumaBill.pdf": {
     "skip": true,
     "client": "Client PDF",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "febBill.jpg": {
+    "client": "Client febBill",
+    "months": [
+      {
+        "month": "feb-25",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb-26",
+        "kwh": 680,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "febBill2.jpg": {
+    "client": "Client febBill2",
+    "months": [
+      {
+        "month": "feb-25",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb-26",
+        "kwh": 680,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "febbill3.jpg": {
+    "client": "Client febbill3",
+    "months": [
+      {
+        "month": "feb-25",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb-26",
+        "kwh": 680,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "febbill4.jpg": {
+    "client": "Client febbill4",
+    "months": [
+      {
+        "month": "feb-25",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb-26",
+        "kwh": 680,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "febbill5.jpg": {
+    "client": "Client febbill5",
+    "months": [
+      {
+        "month": "feb-25",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb-26",
+        "kwh": 680,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "febbill6.jpg": {
+    "client": "Client febbill6",
+    "months": [
+      {
+        "month": "feb-25",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb-26",
+        "kwh": 680,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "febbillSombra.jpg": {
+    "client": "Client febbillSombra",
+    "months": [
+      {
+        "month": "feb-25",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb-26",
+        "kwh": 680,
+        "costPerKwh": 0.26
+      }
     ]
   },
   "lumaBill-page4.png": {
     "client": "Client PDF-to-image",
     "months": [
-      { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic", "kwh": 690, "costPerKwh": 0.28 },
-      { "month": "ene-26", "kwh": 860, "costPerKwh": 0.26 }
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
     ]
   },
   "imageMobile.jpg": {
     "client": "Client imageMobile",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenMobile2.jpg": {
     "client": "Client imagenMobile2",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenMobile3.jpg": {
     "client": "Client imagenMobile3",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenConAngulo.jpg": {
     "client": "Client imagenConAngulo",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenConAngulo2.jpg": {
     "client": "Client imagenConAngulo2",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenConSombra.jpg": {
     "client": "Client imagenConSombra",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenConSombra2.jpg": {
     "client": "Client imagenConSombra2",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenCropOut.jpg": {
     "client": "Client imagenCropOut",
-    "skip":true,
+    "skip": true,
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenAlmostCropOut.jpg": {
     "client": "Client imagenAlmostCropOut",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenVertical.jpg": {
     "client": "Client imagenVertical",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenVertical2.jpg": {
     "client": "Client imagenVertical2",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenVertical3.jpg": {
     "client": "Client imagenVertical3",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenWithBackgroundObject.jpg": {
     "client": "Client imagenWithBackgroundObject",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenWithBackgroundObject2.jpg": {
     "client": "Client imagenWithBackgroundObject2",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenWithBackgroundObject3.jpg": {
     "client": "Client imagenWithBackgroundObject3",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   },
   "imagenWithBackgroundObjectAnZoomOut.jpg": {
     "client": "Client imagenWithBackgroundObjectAnZoomOut",
     "months": [
-      { "month": "dic-24", "kwh": 520, "costPerKwh": 0.24 },
-      { "month": "ene", "kwh": 670, "costPerKwh": 0.26 },
-      { "month": "feb", "kwh": 620, "costPerKwh": 0.26 },
-      { "month": "mar", "kwh": 640, "costPerKwh": 0.26 },
-      { "month": "abr", "kwh": 730, "costPerKwh": 0.26 },
-      { "month": "may", "kwh": 570, "costPerKwh": 0.26 },
-      { "month": "jun", "kwh": 840, "costPerKwh": 0.25 },
-      { "month": "jul", "kwh": 830, "costPerKwh": 0.25 },
-      { "month": "ago", "kwh": 620, "costPerKwh": 0.22 },
-      { "month": "sep", "kwh": 1310, "costPerKwh": 0.25 },
-      { "month": "oct", "kwh": 1000, "costPerKwh": 0.27 },
-      { "month": "nov", "kwh": 960, "costPerKwh": 0.27 },
-      { "month": "dic-25", "kwh": 690, "costPerKwh": 0.28 }
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "image__aug-rot5.png": {
+    "client": "Client imagen (rot5)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-rot10.png": {
+    "client": "Client imagen (rot10)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-rot15.png": {
+    "client": "Client imagen (rot15)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-rotn5.png": {
+    "client": "Client imagen (rotn5)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-rotn10.png": {
+    "client": "Client imagen (rotn10)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-rotn15.png": {
+    "client": "Client imagen (rotn15)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-bright0.6.png": {
+    "client": "Client imagen (bright0.6)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-bright0.8.png": {
+    "client": "Client imagen (bright0.8)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-bright1.2.png": {
+    "client": "Client imagen (bright1.2)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-bright1.4.png": {
+    "client": "Client imagen (bright1.4)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-blur1.0.png": {
+    "client": "Client imagen (blur1.0)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-blur2.0.png": {
+    "client": "Client imagen (blur2.0)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-jpeg40.png": {
+    "client": "Client imagen (jpeg40)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-jpeg60.png": {
+    "client": "Client imagen (jpeg60)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-noise10.png": {
+    "client": "Client imagen (noise10)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-noise20.png": {
+    "client": "Client imagen (noise20)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-rot5_bright0.8.png": {
+    "client": "Client imagen (rot5_bright0.8)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-rot10_blur1.0.png": {
+    "client": "Client imagen (rot10_blur1.0)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-rotn5_noise10.png": {
+    "client": "Client imagen (rotn5_noise10)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "image__aug-bright0.7_blur1.0.png": {
+    "client": "Client imagen (bright0.7_blur1.0)",
+    "augmented_from": "image.png",
+    "months": [
+      {
+        "month": "ago-24",
+        "kwh": 808,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "sep",
+        "kwh": 634,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "oct",
+        "kwh": 919,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "nov",
+        "kwh": 735,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "dic",
+        "kwh": 308,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 511,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 377,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 430,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 461,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 465,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 516,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jul",
+        "kwh": 556,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago-25",
+        "kwh": 835,
+        "costPerKwh": 0.25
+      }
+    ]
+  },
+  "lumaBill-page4__aug-rot5.png": {
+    "client": "Client PDF-to-image (rot5)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-rot10.png": {
+    "client": "Client PDF-to-image (rot10)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-rot15.png": {
+    "client": "Client PDF-to-image (rot15)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-rotn5.png": {
+    "client": "Client PDF-to-image (rotn5)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-rotn10.png": {
+    "client": "Client PDF-to-image (rotn10)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-rotn15.png": {
+    "client": "Client PDF-to-image (rotn15)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-bright0.6.png": {
+    "client": "Client PDF-to-image (bright0.6)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-bright0.8.png": {
+    "client": "Client PDF-to-image (bright0.8)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-bright1.2.png": {
+    "client": "Client PDF-to-image (bright1.2)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-bright1.4.png": {
+    "client": "Client PDF-to-image (bright1.4)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-blur1.0.png": {
+    "client": "Client PDF-to-image (blur1.0)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-blur2.0.png": {
+    "client": "Client PDF-to-image (blur2.0)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-jpeg40.png": {
+    "client": "Client PDF-to-image (jpeg40)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-jpeg60.png": {
+    "client": "Client PDF-to-image (jpeg60)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-noise10.png": {
+    "client": "Client PDF-to-image (noise10)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-noise20.png": {
+    "client": "Client PDF-to-image (noise20)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-rot5_bright0.8.png": {
+    "client": "Client PDF-to-image (rot5_bright0.8)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-rot10_blur1.0.png": {
+    "client": "Client PDF-to-image (rot10_blur1.0)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-rotn5_noise10.png": {
+    "client": "Client PDF-to-image (rotn5_noise10)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "lumaBill-page4__aug-bright0.7_blur1.0.png": {
+    "client": "Client PDF-to-image (bright0.7_blur1.0)",
+    "augmented_from": "lumaBill-page4.png",
+    "months": [
+      {
+        "month": "ene-25",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      },
+      {
+        "month": "ene-26",
+        "kwh": 860,
+        "costPerKwh": 0.26
+      }
+    ]
+  },
+  "imagenMobile2__aug-rot5.jpg": {
+    "client": "Client imagenMobile2 (rot5)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-rot10.jpg": {
+    "client": "Client imagenMobile2 (rot10)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-rot15.jpg": {
+    "client": "Client imagenMobile2 (rot15)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-rotn5.jpg": {
+    "client": "Client imagenMobile2 (rotn5)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-rotn10.jpg": {
+    "client": "Client imagenMobile2 (rotn10)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-rotn15.jpg": {
+    "client": "Client imagenMobile2 (rotn15)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-bright0.6.jpg": {
+    "client": "Client imagenMobile2 (bright0.6)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-bright0.8.jpg": {
+    "client": "Client imagenMobile2 (bright0.8)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-bright1.2.jpg": {
+    "client": "Client imagenMobile2 (bright1.2)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-bright1.4.jpg": {
+    "client": "Client imagenMobile2 (bright1.4)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-blur1.0.jpg": {
+    "client": "Client imagenMobile2 (blur1.0)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-blur2.0.jpg": {
+    "client": "Client imagenMobile2 (blur2.0)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-jpeg40.jpg": {
+    "client": "Client imagenMobile2 (jpeg40)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-jpeg60.jpg": {
+    "client": "Client imagenMobile2 (jpeg60)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-noise10.jpg": {
+    "client": "Client imagenMobile2 (noise10)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-noise20.jpg": {
+    "client": "Client imagenMobile2 (noise20)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-rot5_bright0.8.jpg": {
+    "client": "Client imagenMobile2 (rot5_bright0.8)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-rot10_blur1.0.jpg": {
+    "client": "Client imagenMobile2 (rot10_blur1.0)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-rotn5_noise10.jpg": {
+    "client": "Client imagenMobile2 (rotn5_noise10)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenMobile2__aug-bright0.7_blur1.0.jpg": {
+    "client": "Client imagenMobile2 (bright0.7_blur1.0)",
+    "augmented_from": "imagenMobile2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-rot5.jpg": {
+    "client": "Client imagenConSombra2 (rot5)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-rot10.jpg": {
+    "client": "Client imagenConSombra2 (rot10)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-rot15.jpg": {
+    "client": "Client imagenConSombra2 (rot15)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-rotn5.jpg": {
+    "client": "Client imagenConSombra2 (rotn5)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-rotn10.jpg": {
+    "client": "Client imagenConSombra2 (rotn10)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-rotn15.jpg": {
+    "client": "Client imagenConSombra2 (rotn15)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-bright0.6.jpg": {
+    "client": "Client imagenConSombra2 (bright0.6)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-bright0.8.jpg": {
+    "client": "Client imagenConSombra2 (bright0.8)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-bright1.2.jpg": {
+    "client": "Client imagenConSombra2 (bright1.2)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-bright1.4.jpg": {
+    "client": "Client imagenConSombra2 (bright1.4)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-blur1.0.jpg": {
+    "client": "Client imagenConSombra2 (blur1.0)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-blur2.0.jpg": {
+    "client": "Client imagenConSombra2 (blur2.0)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-jpeg40.jpg": {
+    "client": "Client imagenConSombra2 (jpeg40)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-jpeg60.jpg": {
+    "client": "Client imagenConSombra2 (jpeg60)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-noise10.jpg": {
+    "client": "Client imagenConSombra2 (noise10)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-noise20.jpg": {
+    "client": "Client imagenConSombra2 (noise20)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-rot5_bright0.8.jpg": {
+    "client": "Client imagenConSombra2 (rot5_bright0.8)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-rot10_blur1.0.jpg": {
+    "client": "Client imagenConSombra2 (rot10_blur1.0)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-rotn5_noise10.jpg": {
+    "client": "Client imagenConSombra2 (rotn5_noise10)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenConSombra2__aug-bright0.7_blur1.0.jpg": {
+    "client": "Client imagenConSombra2 (bright0.7_blur1.0)",
+    "augmented_from": "imagenConSombra2.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-rot5.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (rot5)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-rot10.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (rot10)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-rot15.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (rot15)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-rotn5.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (rotn5)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-rotn10.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (rotn10)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-rotn15.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (rotn15)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-bright0.6.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (bright0.6)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-bright0.8.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (bright0.8)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-bright1.2.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (bright1.2)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-bright1.4.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (bright1.4)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-blur1.0.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (blur1.0)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-blur2.0.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (blur2.0)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-jpeg40.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (jpeg40)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-jpeg60.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (jpeg60)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-noise10.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (noise10)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-noise20.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (noise20)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-rot5_bright0.8.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (rot5_bright0.8)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-rot10_blur1.0.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (rot10_blur1.0)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-rotn5_noise10.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (rotn5_noise10)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
+    ]
+  },
+  "imagenWithBackgroundObject3__aug-bright0.7_blur1.0.jpg": {
+    "client": "Client imagenWithBackgroundObject3 (bright0.7_blur1.0)",
+    "augmented_from": "imagenWithBackgroundObject3.jpg",
+    "months": [
+      {
+        "month": "dic-24",
+        "kwh": 520,
+        "costPerKwh": 0.24
+      },
+      {
+        "month": "ene",
+        "kwh": 670,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "feb",
+        "kwh": 620,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "mar",
+        "kwh": 640,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "abr",
+        "kwh": 730,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "may",
+        "kwh": 570,
+        "costPerKwh": 0.26
+      },
+      {
+        "month": "jun",
+        "kwh": 840,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "jul",
+        "kwh": 830,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "ago",
+        "kwh": 620,
+        "costPerKwh": 0.22
+      },
+      {
+        "month": "sep",
+        "kwh": 1310,
+        "costPerKwh": 0.25
+      },
+      {
+        "month": "oct",
+        "kwh": 1000,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "nov",
+        "kwh": 960,
+        "costPerKwh": 0.27
+      },
+      {
+        "month": "dic-25",
+        "kwh": 690,
+        "costPerKwh": 0.28
+      }
     ]
   }
 }
