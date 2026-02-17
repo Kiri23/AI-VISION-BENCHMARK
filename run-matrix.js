@@ -17,7 +17,9 @@ const imageCount = Object.keys(groundTruth).filter((f) => !groundTruth[f].skip).
 const experimentTag = tagArg ? tagArg.split("=")[1] : `${promptName}-${imageCount}img`;
 const experimentPreprocessing = preprocArg ? preprocArg.split("=")[1] : "none";
 
-const SAMPLE_DIR = path.join(__dirname, "sample");
+const SAMPLE_DIR = experimentPreprocessing !== "none"
+  ? path.join(__dirname, "sample_preprocessed")
+  : path.join(__dirname, "sample");
 const RESULTS_DIR = path.join(__dirname, "results");
 
 const MIME_MAP = {

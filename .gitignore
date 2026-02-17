@@ -15,3 +15,5 @@ build/
 *.swo
 results/
 eng.traineddata
+sample_preprocessed/
+__pycache__/
