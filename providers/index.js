@@ -8,14 +8,14 @@ const openai52 = require('./openai-5.2');
 const claude = require('./claude');
 
 const providers = [
-  gemini,
+  // gemini,
   gemini25Flash,
   // gemini3Flash,
   // openai,
-  openai41Mini,
+  // openai41Mini,
   // openai41Nano,
   openai52,
-  claude,
+  // claude,
 ];
 
 module.exports = providers;
