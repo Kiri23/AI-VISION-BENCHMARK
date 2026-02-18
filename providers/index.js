@@ -14,7 +14,7 @@ const providers = [
   // openai,
   // openai41Mini,
   // openai41Nano,
-  openai52,
+  // openai52,
   // claude,
 ];
 
