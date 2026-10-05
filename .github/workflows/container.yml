@@ -11,7 +11,7 @@ permissions:
 
 env:
   IMAGE: ghcr.io/kiri23/ai-vision-benchmark
-  DEPLOY_DIR: deploy/vision-bench
+  DEPLOY_DIR: deploy/AI-VISION-BENCHMARK  # the folder the kiriInfra wizard creates: deploy/<repo>
   DOMAIN: vision-bench.kiri231.com
 
 jobs:
