@@ -1,0 +1,6 @@
+# Local: builds the image and serves it on http://localhost:8080 (127.0.0.1 only).
+services:
+  vision-bench:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"

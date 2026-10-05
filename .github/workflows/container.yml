@@ -1,0 +1,130 @@
+name: Container
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE: ghcr.io/kiri23/ai-vision-benchmark
+  DEPLOY_DIR: deploy/vision-bench
+  DOMAIN: vision-bench.kiri231.com
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Build
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          load: true
+          tags: |
+            ${{ env.IMAGE }}:${{ github.sha }}
+            ${{ env.IMAGE }}:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Run
+        run: docker run -d --name vision-bench -p 8080:8080 "$IMAGE:$GITHUB_SHA"
+
+      - name: Smoke test
+        run: |
+          for _ in $(seq 1 20); do
+            curl -fsS http://localhost:8080/health >/dev/null 2>&1 && break
+            sleep 1
+          done
+          test "$(curl -fsS http://localhost:8080/health)" = "ok"
+          # The page and the raw results it links to.
+          raw=$(jq -r .rawFile site/src/lib/data/results.json)
+          for ruta in / "/$raw"; do
+            codigo=$(curl -fsS -o /dev/null -w "%{http_code}" "http://localhost:8080$ruta")
+            echo "GET $ruta -> $codigo"
+            test "$codigo" = 200
+          done
+          # The root has to be the prerendered page, with the numbers already in the HTML.
+          curl -fsS http://localhost:8080/ | grep -qF "<title>AI Vision Benchmark"
+          curl -fsS http://localhost:8080/ | grep -qF "Leaderboard"
+
+      - name: Logs if it failed
+        if: failure()
+        run: docker logs vision-bench || true
+
+      - name: Log in to GHCR
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          docker push "$IMAGE:$GITHUB_SHA"
+          docker push "$IMAGE:latest"
+
+  # Same pattern as Kiri23/kiri-design and Kiri23/portfolio. Skipped, not failed,
+  # while vars.VPS_HOST is empty: CI access to vps2 (Tailscale OIDC + ssh as ci)
+  # is set up by the Kiri23/kiriInfra wizard,
+  # `VPS=vps2 deno run --no-config -A scripts/setup-ci-tailscale.ts AI-VISION-BENCHMARK`.
+  # 80/443 belong to kiri-edge, which picks up the labels in compose.prod.yaml.
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.VPS_HOST != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    concurrency:
+      group: deploy-prod
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: tailscale/github-action@v4
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          audience: ${{ secrets.TS_AUDIENCE }}
+          tags: tag:ci
+          ping: ${{ vars.VPS_HOST }}
+
+      - name: Prepare the deploy dir and the shared kiri-edge network
+        run: >
+          ssh -o StrictHostKeyChecking=accept-new ${{ vars.VPS_USER }}@${{ vars.VPS_HOST }}
+          "mkdir -p ${{ env.DEPLOY_DIR }}
+          && (docker network inspect kiri-edge >/dev/null 2>&1 || docker network create kiri-edge 2>/dev/null || docker network inspect kiri-edge >/dev/null)"
+
+      - name: Copy compose to the VPS
+        run: >
+          scp -o StrictHostKeyChecking=accept-new
+          compose.prod.yaml
+          ${{ vars.VPS_USER }}@${{ vars.VPS_HOST }}:${{ env.DEPLOY_DIR }}/
+
+      # The image is public: the VPS pulls it without docker login.
+      - name: Pull and start the new image
+        run: >
+          ssh -o StrictHostKeyChecking=accept-new ${{ vars.VPS_USER }}@${{ vars.VPS_HOST }}
+          "cd ${{ env.DEPLOY_DIR }}
+          && export IMAGE_TAG=${{ github.sha }}
+          && docker compose -f compose.prod.yaml pull
+          && docker compose -f compose.prod.yaml up -d --no-build --remove-orphans"
+
+      - name: Check the live site
+        run: |
+          for _ in $(seq 1 20); do
+            if [ "$(curl -sf --connect-timeout 5 --max-time 10 https://${{ env.DOMAIN }}/health)" = "ok" ]; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "https://${{ env.DOMAIN }} never became ready"
+          exit 1

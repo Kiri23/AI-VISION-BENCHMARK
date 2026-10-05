@@ -16,8 +16,8 @@ Final run: prompt v3, resize preprocessing, 124 images (25 real bills plus 99 au
 
 | Provider | Accuracy | Cost per image | Cost at 15k images/month |
 |---|---|---|---|
-| OpenAI GPT-5.2 | **95.2%** | ~$0.0074 | ~$110 |
-| Gemini 2.5 Flash | **90.1%** | ~$0.0009 | ~$13 |
+| OpenAI GPT-5.2 | **95.2%** | ~$0.0074 | ~$112 |
+| Gemini 2.5 Flash | **90.1%** | ~$0.0010 | ~$14 |
 
 A month counts as correct only if the label, the kWh (exact) and the cost per kWh (within $0.01) all match.
 
@@ -81,6 +81,9 @@ Each run writes a Markdown report to `results/report.md` and a JSON log to `resu
 | `node script/run-single.js <provider> <file>` | One provider against one file |
 | `npm run compare-experiments` | Compares every experiment log in a table |
 | `npm test` | Unit tests |
+| `npm run export-site` | Rebuilds `site/src/lib/data/results.json` from the experiment logs |
+| `npm run build:site` | Builds the results page into `site/build/` |
+| `docker compose up` | Serves the results page at http://localhost:8080 |
 | `python preprocessing/augment.py` | Generates the augmented dataset |
 
 ## Limitations

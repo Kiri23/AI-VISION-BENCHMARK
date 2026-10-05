@@ -1,0 +1,7 @@
+# Only site/ and docker/ go into the image.
+*
+!site/
+!docker/
+site/node_modules
+site/build
+site/.svelte-kit

@@ -1,0 +1,11 @@
+# Caddy inside the container: serves the static page on :8080.
+# Not the edge Caddy: TLS and the domain come from the reverse proxy outside.
+{
+	admin off
+}
+
+:8080 {
+	root * /srv
+	respond /health "ok" 200
+	file_server
+}

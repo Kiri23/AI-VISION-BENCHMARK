@@ -1,0 +1,24 @@
+# Production on vps2. No ports: 80 and 443 belong to the shared edge kiri-edge
+# (Kiri23/kiriInfra, services/kiri-edge, caddy-docker-proxy). Its controller
+# reads the caddy labels of containers on the kiri-edge network, so there is no
+# Caddyfile to edit and nothing to reload. The image is built in CI.
+#
+# No container_name: the controller connects through the container's IP on
+# kiri-edge ({{upstreams 8080}}), not its name. *.kiri231.com points to vps2.
+name: vision-bench
+
+services:
+  vision-bench:
+    image: ghcr.io/kiri23/ai-vision-benchmark:${IMAGE_TAG:-latest}
+    restart: unless-stopped
+    mem_limit: 64m
+    networks:
+      - kiri-edge
+    labels:
+      caddy: vision-bench.kiri231.com
+      caddy.reverse_proxy: "{{upstreams 8080}}"   # the port INSIDE the container
+
+networks:
+  kiri-edge:
+    # The deploy job creates it before `up`: compose doesn't create external networks.
+    external: true

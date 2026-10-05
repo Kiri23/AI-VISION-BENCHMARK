@@ -54,6 +54,14 @@ run-matrix.js            ← Main entry: loops files × providers, generates rep
 └── sample/              ← Test images (phone photos at various angles/lighting + PDF-extracted PNGs)
 ```
 
+## Results Page
+
+`site/` is a SvelteKit app (adapter-static, prerendered) published at https://vision-bench.kiri231.com.
+- Data: `site/src/lib/data/results.json`, written by `npm run export-site` from `results/experiments/` (which only exists locally). Commit the JSON; the site builds from it alone.
+- Showcase bills: images in `site/static/bills/`, cropped to the chart. Never add a crop that shows a name, address, account number or amount. A bill whose image is missing stays off the page.
+- Styling comes live from `https://design.kiri231.com/tokens.css` (kiri-design); use its `--kiri-*` variables, no raw hex.
+- Deploy: `Dockerfile` (node build → Caddy), `compose.prod.yaml` on vps2 behind kiri-edge, `.github/workflows/container.yml`.
+
 ## Key Design Decisions
 
 - **All providers share the same prompt** from `prompt.js` — this ensures fair comparison. Each provider module only handles SDK-specific wiring.
