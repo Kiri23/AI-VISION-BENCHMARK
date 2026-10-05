@@ -4,18 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-Prototype spike (Ticket #736) for Windmar to extract monthly kWh energy consumption data from LUMA/AEE electricity bill images using AI vision APIs. This is **not** a production app — it's a benchmarking harness to compare providers (Gemini, OpenAI, Claude) on accuracy and cost before choosing one for production integration into the Windmar ecosystem.
+A benchmarking harness that compares AI vision APIs (Gemini, OpenAI, Claude) on one task: reading 13 months of kWh consumption and cost-per-kWh from the usage chart on LUMA (Puerto Rico) electricity bills. It is **not** a production app. It exists to pick a provider on accuracy and cost before building the real integration.
 
 ## The Problem
 
-Windmar needs to extract 13 months of kWh consumption + cost-per-kWh from LUMA bill chart images. Inputs come from two sources: phone photos of physical bills (variable quality) and PDF exports from the LUMA app (clean). The spike validates whether AI vision APIs can hit the accuracy threshold (~65%) needed for production.
+A solar company in Puerto Rico needs a customer's last 13 months of kWh to size a system. Customers send either phone photos of the paper bill (variable angle, light, blur, background objects) or PDF exports from the LUMA app (clean). Typing the values by hand is slow and error-prone, so the question is whether a vision API can read the chart reliably and cheaply.
 
 ## Current State
 
-- Gemini 2.0 Flash and OpenAI GPT-4o are active providers. Claude is implemented but commented out in `providers/index.js`.
-- Latest results: Gemini hits 13/13 on both test images, OpenAI hits 13/13 on one and 10/13 on the other (costPerKwh alignment errors).
-- Prompt v2 is the current version — it explicitly describes the two-chart layout (consumption bars + cost line chart) and instructs the model to read printed values, not estimate from bar heights.
-- PDFs are converted to images via `pdf-to-img` before sending to providers (the `lumaBill.pdf` entry is skipped in ground-truth, `lumaBill-page4.png` is its extracted chart page).
+- The study is finished. Final run (prompt v3, resize preprocessing, 124 images): GPT-5.2 95.2%, Gemini 2.5 Flash 90.1% at about 1/8 of the cost.
+- Recommendation: Gemini 2.5 Flash with resize to 1600px, with GPT-5.2 as a fallback for low-confidence reads.
+- Known failures: cropped charts and strongly tilted photos.
+- `providers/index.js` currently has only Gemini 2.5 Flash active; uncomment others to compare.
+- Prompt v3 (`prompts/v3.js`) is the latest.
+- Preprocessing (`preprocessing/pipeline.py`) is EXIF orientation fix + resize to 1600px. Perspective warp and CLAHE were tried and made accuracy worse.
+- `sample/`, `sample_preprocessed/` and `results/` are gitignored: the real bills contain personal data and never go in the repo. `ground-truth.json` is committed and holds only months, kWh and cost values.
 
 ## Architecture
 
@@ -29,14 +32,17 @@ run-matrix.js            ← Main entry: loops files × providers, generates rep
 ├── experiment-compare.js ← Reads all experiment logs, prints comparison table
 ├── providers/
 │   ├── index.js         ← Registry of active providers (array export)
-│   ├── gemini.js        ← Google GenAI SDK, uses structured JSON output schema
-│   ├── openai.js        ← OpenAI SDK, uses json_schema response format
+│   ├── gemini*.js       ← Google GenAI SDK (2.0 Flash, 2.5 Flash, 3 Flash), structured JSON output schema
+│   ├── openai*.js       ← OpenAI SDK (GPT-4o, 4.1 mini/nano, 5.2), json_schema response format
 │   └── claude.js        ← Anthropic SDK, manual JSON parsing (no structured output)
 ├── prompts/
-│   ├── v1.js            ← Initial prompt
-│   └── v2.js            ← Current prompt (two-chart layout description)
+│   ├── v1.js, v2.js     ← Earlier prompts
+│   └── v3.js            ← Current prompt
+├── pricing.js           ← Per-model token prices used for cost estimates
+├── preprocessing/       ← Python + Pillow: preprocess.py (batch), pipeline.py (EXIF + resize), augment.py (dataset augmentation)
 ├── script/
-│   └── run-single.js    ← Quick test: one provider × one file
+│   ├── run-single.js    ← Quick test: one provider × one file
+│   └── run-provider.js  ← One provider over a folder
 ├── unitTesting/         ← Unit tests (node:test)
 │   ├── compare.test.js  ← Tests for scoring logic
 │   ├── experiment-log.test.js ← Tests for experiment log (computation + file I/O)
@@ -60,13 +66,14 @@ run-matrix.js            ← Main entry: loops files × providers, generates rep
 
 - `--prompt=vN` — use a specific prompt version (default: latest)
 - `--tag=my-label` — human-readable experiment label (default: auto-generated as `{promptVersion}-{imageCount}img`, e.g. `v2-18img`)
-- `--preprocessing=sharpen` — label for what preprocessing was applied (default: `none`, for future use)
+- `--preprocessing=resize` — label for what preprocessing was applied (default: `none`)
 
 ## npm Scripts
 
 - `npm start` — run the full matrix (all images × all providers)
 - `npm test` — run unit tests
 - `npm run compare-experiments` — print comparison table across all experiment logs
+- `npm run start:preprocessed` — preprocess `sample/` into `sample_preprocessed/`, then run the matrix
 
 ## Adding a New Provider
 

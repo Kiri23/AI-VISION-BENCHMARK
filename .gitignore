@@ -21,3 +21,7 @@ __pycache__/
 sample/
 _bmad-output/
 _notes/
+
+# BMAD (local only)
+_bmad/
+.claude/commands/bmad-*
