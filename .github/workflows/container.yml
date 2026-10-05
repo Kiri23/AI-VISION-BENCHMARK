@@ -118,9 +118,10 @@ jobs:
           && docker compose -f compose.prod.yaml pull
           && docker compose -f compose.prod.yaml up -d --no-build --remove-orphans"
 
+      # The first deploy of a new subdomain waits for the edge to get its certificate: give it 5 minutes.
       - name: Check the live site
         run: |
-          for _ in $(seq 1 20); do
+          for _ in $(seq 1 60); do
             if [ "$(curl -sf --connect-timeout 5 --max-time 10 https://${{ env.DOMAIN }}/health)" = "ok" ]; then
               exit 0
             fi
