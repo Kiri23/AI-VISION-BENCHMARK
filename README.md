@@ -1,28 +1,27 @@
-# AI Vision API Benchmarking Harness
+# AI Vision Benchmark
 
-Benchmarking harness to compare AI vision APIs on extracting structured data from utility bill chart images. Tests multiple providers (Google Gemini, OpenAI, Anthropic Claude) on accuracy and cost, with support for image preprocessing and data augmentation.
+A benchmark that compares AI vision APIs (Google Gemini, OpenAI, Anthropic Claude) on one real task: reading 13 months of kWh and cost-per-kWh from the usage chart on Puerto Rico electricity bills. The result: GPT-5.2 is the most accurate (95.2%), and Gemini 2.5 Flash gets 90.1% for about 1/8 of the cost.
 
-## Problem
+**Live:** https://vision-bench.kiri231.com
 
-Extract 13 months of energy consumption data (kWh per month + cost per kWh) from bar chart images on electricity bills. Images come from two sources:
+## The problem
 
-- **Phone photos** of physical bills (variable quality — angles, shadows, blur, lighting)
-- **PDF exports** from utility apps (clean, consistent)
+A solar company in Puerto Rico sizes each installation from the customer's last 13 months of consumption. That history lives in a bar chart on the LUMA bill, and customers send it as a phone photo of the paper bill (tilted, shadowed, blurry, with a hand or a table in frame) or as a PDF from the LUMA app. Someone had to type 13 months of kWh and cost per kWh by hand for every lead.
 
-The harness measures which AI vision APIs can reliably read these charts, how they handle degraded image quality, and what it costs at scale.
+The question this repo answers: can a vision API read that chart reliably enough to replace the typing, and which one is worth paying for at about 15,000 bills a month?
 
-## Key Findings
+## Results
 
-### Provider Accuracy (124 images, with resize preprocessing)
+Final run: prompt v3, resize preprocessing, 124 images (25 real bills plus 99 augmentations: rotation, brightness, blur, JPEG compression, noise).
 
-| Provider | Accuracy | Cost (124 imgs) | Est. $/image |
+| Provider | Accuracy | Cost per image | Cost at 15k images/month |
 |---|---|---|---|
-| OpenAI GPT-5.2 | **95.2%** | $0.92 | ~$0.0074 |
-| Gemini 2.5 Flash | **90.1%** | $0.12 | ~$0.0009 |
+| OpenAI GPT-5.2 | **95.2%** | ~$0.0074 | ~$110 |
+| Gemini 2.5 Flash | **90.1%** | ~$0.0009 | ~$13 |
 
-Gemini 2.5 Flash is ~8x cheaper with 5% less accuracy.
+A month counts as correct only if the label, the kWh (exact) and the cost per kWh (within $0.01) all match.
 
-### Provider Accuracy (18 original images, no preprocessing)
+Earlier runs on the 18 original photos, without preprocessing:
 
 | Provider | Accuracy | Cost |
 |---|---|---|
@@ -32,32 +31,65 @@ Gemini 2.5 Flash is ~8x cheaper with 5% less accuracy.
 | Gemini 2.5 Flash | 69% | $0.02 |
 | Claude Sonnet 4.5 | 50% | $0.20 |
 
-### Preprocessing Impact
+Resizing to 1600px wide (after fixing EXIF orientation) helped every provider: Gemini 2.5 Flash went from 69% to 87%, Gemini 2.0 Flash from 87% to 93%, GPT-5.2 from 86% to 91%. Perspective warp and CLAHE contrast both made accuracy worse.
 
-Simple resize to 1600px width (with EXIF orientation fix) improves accuracy across all providers:
+Recommendation: Gemini 2.5 Flash with resize, and GPT-5.2 as a fallback for the reads Gemini gets wrong.
 
-| Provider | No preprocessing | Resize only | Delta |
-|---|---|---|---|
-| Gemini 2.5 Flash | 69% | 87% | **+18%** |
-| Gemini 2.0 Flash | 87% | 93% | **+6%** |
-| GPT-5.2 | 86% | 91% | **+5%** |
+## How it's built
 
-More aggressive preprocessing (perspective warp, CLAHE contrast) **hurt** accuracy — simpler is better.
+| Part | Technology |
+|---|---|
+| Harness | Node.js (CommonJS), `node:test` for unit tests |
+| Providers | `@google/genai`, `openai`, `@anthropic-ai/sdk`; `pdf-to-img` for PDF bills |
+| Preprocessing | Python with Pillow: EXIF fix, resize, dataset augmentation |
+| Results page | SvelteKit with `adapter-static`, prerendered from a JSON snapshot of the runs |
+| Hosting | Caddy container on a VPS behind a shared edge Caddy ([Kiri23/kiriInfra](https://github.com/Kiri23/kiriInfra)) |
 
-### Failure Modes
+Every provider gets the same prompt, so each provider module only does SDK wiring. Gemini and OpenAI enforce the JSON schema natively; Claude gets schema instructions in the prompt and its answer is parsed by hand.
 
-- **Angled photos** are the only universal failure (0-58% across all providers). This is a perceptual limitation — the models can't read distorted text, and prompt engineering doesn't help.
-- **Cropped/incomplete charts** score ~50% across all providers — missing data can't be recovered.
-- Clean photos, shadows, background objects, zoom, and blur are all handled well (85-100%) by the best models.
+## Run it locally
 
-### Data Augmentation Findings
+The real bills contain personal data, so `sample/` is not in the repo. Bring your own LUMA bill photos or PDFs.
 
-Tested 124 images (25 originals + 99 synthetic augmentations: rotation, brightness, blur, JPEG compression, noise):
+```bash
+npm install
+cp .env.example .env   # then fill in the keys
+```
 
-- **Rotation** — GPT-5.2 dominates (89-100% vs Gemini's 66-75%)
-- **Brightness/blur** — Gemini slightly better on dim/blurry images
-- **JPEG compression/noise** — tied (~98%)
-- Synthetic rotation (Pillow `rotate()`) is much easier for models than real-world angles — don't assume augmented rotation scores predict real-world performance.
+```
+GEMINI_API_KEY=your-key
+OPENAI_API_KEY=your-key
+ANTHROPIC_API_KEY=your-key   # optional
+```
+
+Put your images in `sample/`, add one entry per file to `ground-truth.json` (the 13 months with kWh and cost per kWh), turn providers on or off in `providers/index.js`, and run:
+
+```bash
+npm start
+```
+
+Each run writes a Markdown report to `results/report.md` and a JSON log to `results/experiments/`.
+
+## Commands
+
+| Command | What it does |
+|---|---|
+| `npm start` | Runs every image against every active provider |
+| `npm start -- --prompt=v2` | Uses a specific prompt version (default: latest) |
+| `npm start -- --tag=label` | Labels the experiment log |
+| `npm run start:preprocessed` | Preprocesses `sample/` into `sample_preprocessed/`, then runs the matrix |
+| `node script/run-single.js <provider> <file>` | One provider against one file |
+| `npm run compare-experiments` | Compares every experiment log in a table |
+| `npm test` | Unit tests |
+| `python preprocessing/augment.py` | Generates the augmented dataset |
+
+## Limitations
+
+- **Tilted photos** fail for every provider (0-58%). The models can't read distorted text, and prompting didn't fix it.
+- **Cropped charts** score around 50%: missing months can't be recovered.
+- **Synthetic rotation is easier than a real angle.** Pillow's `rotate()` doesn't predict how a model handles a phone held at an angle.
+- No confidence score: nothing tells you which reads to trust without a ground truth to compare against.
+- 25 real bills is a small sample. The augmentations widen it, but they come from the same photos.
 
 ## Architecture
 
@@ -100,72 +132,4 @@ run-matrix.js            <- Main entry: loops files x providers, generates repor
 - **Per-field comparison** — each month must match on label, kWh (exact), and costPerKwh (within $0.01 tolerance). A month only counts as correct if all three match.
 - **Experiment tracking** — each run saves a JSON log to `results/experiments/` with summary stats and raw results. Reports auto-archive with timestamps.
 
-## Usage
 
-```bash
-npm install
-```
-
-Set API keys in `.env`:
-```
-GEMINI_API_KEY=your-key
-OPENAI_API_KEY=your-key
-ANTHROPIC_API_KEY=your-key   # optional
-```
-
-Place test images in `sample/` and add entries to `ground-truth.json`.
-
-```bash
-# Run full matrix (all images x all active providers)
-npm start
-
-# Run with specific prompt version
-npm start -- --prompt=v2
-
-# Run with a tag for the experiment log
-npm start -- --tag=my-experiment
-
-# Run a single provider against one file
-node script/run-single.js gemini sample/myimage.jpg
-
-# Compare all experiment logs
-npm run compare-experiments
-
-# Run unit tests
-npm test
-```
-
-### CLI Flags
-
-| Flag | Description | Default |
-|---|---|---|
-| `--prompt=vN` | Use a specific prompt version | latest |
-| `--tag=label` | Human-readable experiment label | auto-generated |
-| `--preprocessing=name` | Label for preprocessing applied | `none` |
-
-## Adding a New Provider
-
-1. Create `providers/<name>.js` exporting `{ name, extract(filePath, mimeType) }`
-2. Add it to the array in `providers/index.js`
-3. Add its API key to `API_KEY_MAP` in `run-matrix.js`
-4. Add pricing to `pricing.js`
-
-## Adding a New Sample Image
-
-1. Place the image in `sample/`
-2. Add an entry to `ground-truth.json` with the filename as key
-3. Set `"skip": true` to exclude from matrix runs
-
-## Preprocessing
-
-The `preprocessing/` directory contains Python scripts for image manipulation:
-
-```bash
-pip install -r preprocessing/requirements.txt
-
-# Resize images to 1600px width with EXIF fix
-python preprocessing/preprocess.py sample/ sample_preprocessed/
-
-# Generate augmented dataset (rotation, brightness, blur, noise, JPEG compression)
-python preprocessing/augment.py
-```
