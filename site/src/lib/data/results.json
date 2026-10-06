@@ -399,6 +399,461 @@
       ]
     }
   ],
-  "showcase": [],
+  "showcase": [
+    {
+      "image": "bills/screenshot.png",
+      "label": "Screenshot of the bill chart",
+      "months": [
+        {
+          "month": "ago-24",
+          "kwh": 808,
+          "costPerKwh": 0.24,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 808,
+              "costPerKwh": 0.24,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 808,
+              "costPerKwh": 0.24,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "sep",
+          "kwh": 634,
+          "costPerKwh": 0.24,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 634,
+              "costPerKwh": 0.24,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 634,
+              "costPerKwh": 0.24,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "oct",
+          "kwh": 919,
+          "costPerKwh": 0.24,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 919,
+              "costPerKwh": 0.24,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 919,
+              "costPerKwh": 0.24,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "nov",
+          "kwh": 735,
+          "costPerKwh": 0.24,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 735,
+              "costPerKwh": 0.24,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 735,
+              "costPerKwh": 0.24,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "dic",
+          "kwh": 308,
+          "costPerKwh": 0.24,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 308,
+              "costPerKwh": 0.24,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 308,
+              "costPerKwh": 0.24,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "ene",
+          "kwh": 511,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 511,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 511,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "feb",
+          "kwh": 377,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 377,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 377,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "mar",
+          "kwh": 430,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 430,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 430,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "abr",
+          "kwh": 461,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 461,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 461,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "may",
+          "kwh": 465,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 465,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 465,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "jun",
+          "kwh": 516,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 516,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 516,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "jul",
+          "kwh": 556,
+          "costPerKwh": 0.25,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 556,
+              "costPerKwh": 0.25,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 556,
+              "costPerKwh": 0.25,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "ago-25",
+          "kwh": 835,
+          "costPerKwh": 0.25,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 835,
+              "costPerKwh": 0.25,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 835,
+              "costPerKwh": 0.25,
+              "pass": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "image": "bills/pdf-export.png",
+      "label": "PDF export from the LUMA app",
+      "months": [
+        {
+          "month": "ene-25",
+          "kwh": 670,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 670,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 670,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "feb",
+          "kwh": 620,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 620,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 620,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "mar",
+          "kwh": 640,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 640,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 640,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "abr",
+          "kwh": 730,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 730,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 730,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "may",
+          "kwh": 570,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 570,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 570,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "jun",
+          "kwh": 840,
+          "costPerKwh": 0.25,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 840,
+              "costPerKwh": 0.25,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 840,
+              "costPerKwh": 0.25,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "jul",
+          "kwh": 830,
+          "costPerKwh": 0.25,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 830,
+              "costPerKwh": 0.25,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 830,
+              "costPerKwh": 0.25,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "ago",
+          "kwh": 620,
+          "costPerKwh": 0.22,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 620,
+              "costPerKwh": 0.22,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 620,
+              "costPerKwh": 0.22,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "sep",
+          "kwh": 1310,
+          "costPerKwh": 0.25,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 1310,
+              "costPerKwh": 0.25,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 1310,
+              "costPerKwh": 0.25,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "oct",
+          "kwh": 1000,
+          "costPerKwh": 0.27,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 1000,
+              "costPerKwh": 0.27,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 1000,
+              "costPerKwh": 0.27,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "nov",
+          "kwh": 960,
+          "costPerKwh": 0.27,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 960,
+              "costPerKwh": 0.27,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 960,
+              "costPerKwh": 0.27,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "dic",
+          "kwh": 690,
+          "costPerKwh": 0.28,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 690,
+              "costPerKwh": 0.28,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 690,
+              "costPerKwh": 0.28,
+              "pass": true
+            }
+          }
+        },
+        {
+          "month": "ene-26",
+          "kwh": 860,
+          "costPerKwh": 0.26,
+          "models": {
+            "Gemini 2.5 Flash": {
+              "kwh": 860,
+              "costPerKwh": 0.26,
+              "pass": true
+            },
+            "OpenAI GPT-5.2": {
+              "kwh": 860,
+              "costPerKwh": 0.26,
+              "pass": true
+            }
+          }
+        }
+      ]
+    }
+  ],
   "rawFile": "data/exp-2026-02-17-1657.json"
 }
