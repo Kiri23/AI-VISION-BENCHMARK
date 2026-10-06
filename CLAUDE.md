@@ -82,6 +82,10 @@ run-matrix.js            ← Main entry: loops files × providers, generates rep
 - `npm test` — run unit tests
 - `npm run compare-experiments` — print comparison table across all experiment logs
 - `npm run start:preprocessed` — preprocess `sample/` into `sample_preprocessed/`, then run the matrix
+- `npm --prefix site run check` — typecheck the results page
+- `npm --prefix site run check:overflow -- <url>` — fail if the page is wider than a 375px or 1280px screen (needs Google Chrome)
+
+CI runs `npm test`, the site typecheck and the layout check on every push and PR.
 
 ## Adding a New Provider
 

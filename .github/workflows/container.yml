@@ -20,6 +20,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      # The harness tests need no install: they only use node's built-ins and local files.
+      - name: Harness tests
+        run: npm test
+
+      - name: Site typecheck
+        run: npm --prefix site ci && npm --prefix site run check
+
       - uses: docker/setup-buildx-action@v3
 
       - name: Build
@@ -53,6 +66,10 @@ jobs:
           # The root has to be the prerendered page, with the numbers already in the HTML.
           curl -fsS http://localhost:8080/ | grep -qF "<title>Can a vision model read a Puerto Rico power bill?"
           curl -fsS http://localhost:8080/ | grep -qF "Figure 3."
+
+      # Nothing wider than the screen at phone and desktop widths. Uses the runner's Chrome.
+      - name: Layout check
+        run: npm --prefix site run check:overflow -- http://localhost:8080/
 
       - name: Logs if it failed
         if: failure()

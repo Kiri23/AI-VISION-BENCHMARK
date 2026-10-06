@@ -83,6 +83,8 @@ Each run writes a Markdown report to `results/report.md` and a JSON log to `resu
 | `npm test` | Unit tests |
 | `npm run export-site` | Rebuilds `site/src/lib/data/results.json` from the experiment logs |
 | `npm run build:site` | Builds the results page into `site/build/` |
+| `npm --prefix site run check` | Typechecks the results page |
+| `npm --prefix site run check:overflow -- <url>` | Fails if the page is wider than a phone or desktop screen |
 | `docker compose up` | Serves the results page at http://localhost:8080 |
 | `python preprocessing/augment.py` | Generates the augmented dataset |
 
