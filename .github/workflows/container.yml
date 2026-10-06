@@ -51,8 +51,8 @@ jobs:
             test "$codigo" = 200
           done
           # The root has to be the prerendered page, with the numbers already in the HTML.
-          curl -fsS http://localhost:8080/ | grep -qF "<title>AI Vision Benchmark"
-          curl -fsS http://localhost:8080/ | grep -qF "Leaderboard"
+          curl -fsS http://localhost:8080/ | grep -qF "<title>Can a vision model read a Puerto Rico power bill?"
+          curl -fsS http://localhost:8080/ | grep -qF "Figure 3."
 
       - name: Logs if it failed
         if: failure()
