@@ -16,6 +16,9 @@
 	const gemini = data.final.providers.find((p) => p.name === 'Gemini 2.5 Flash') ?? cheap;
 	const geminiRaw = data.noPreprocessing.providers[0];
 	const perMonth = data.perMonth.toLocaleString('en-US');
+	const rotation = data.final.byCategory.find((c) => c.category === 'Rotation');
+	const geminiRotated = rotation?.providers['Gemini 2.5 Flash'] ?? 0;
+	const originals = data.final.byCategory.find((c) => c.category === 'Original photo')?.images ?? 0;
 
 	const finalSeries = data.final.providers.map((p) => p.name);
 	const categoryRows = data.final.byCategory.map((c) => ({
@@ -111,44 +114,48 @@
 		{data.final.imageCount} images in total.
 	</p>
 
-	<h2>Results</h2>
+	<h2>Results on the {data.allProviders.imageCount} real photos</h2>
 	<p>
-		Five models ran on the first {data.allProviders.imageCount} images. Claude Sonnet 4.5 trailed far
+		The first nine runs were spent on the prompt. When it stopped improving, I tried cleaning the
+		photos as a last resort, to see if it would move the numbers. Of the four methods, fixing the
+		orientation and resizing to 1600px was the best overall: it helped three of the four models and
+		barely moved GPT-5.2. Straightening the perspective and boosting the contrast made most of them
+		worse. Simpler won, and resizing became part of every run after this.
+	</p>
+	<Figure n={3} caption="The same {data.preprocessing[0].imageCount} real photos under four preprocessing methods. The axis starts at 40%.">
+		<BarChart rows={preRows} series={preSeries} />
+	</Figure>
+	<p>
+		With the resize in place, all five models ran on the same photos. Claude Sonnet 4.5 trailed far
 		behind. Gemini 2.0 Flash scored highest on this small set, but only GPT-5.2 and Gemini 2.5
 		Flash went on to the full run.
 	</p>
-	<Figure n={3} caption="First round, {data.allProviders.imageCount} original images. Accuracy, with the cost of one image under each model.">
+	<Figure n={4} caption="All five models on the {data.allProviders.imageCount} real photos, resized. Accuracy, with the cost of one image under each model.">
 		<BarChart rows={allRows} series={allSeries} min={0} legend={false} />
 	</Figure>
+
+	<h2>Results on the full set</h2>
 	<p>
-		On the full set the gap between the two finalists is five points, and the price gap is
-		{costRatio}×.
+		For the final run the dataset grew to {data.final.imageCount} images: {originals} real photos plus
+		{data.final.imageCount - originals} copies of them with one kind of damage each. The gap between the two
+		finalists is five points, and the price gap is {costRatio}×. Resizing still mattered at this
+		scale: without it, Gemini 2.5 Flash scored {percent(geminiRaw.accuracy)} instead of
+		{percent(gemini.accuracy)}.
 	</p>
 	<Figure
-		n={4}
+		n={5}
 		caption="Final run, {data.final.date}: {data.final.imageCount} images, prompt {data.final.prompt}, resized to 1600px. The monthly cost assumes {perMonth} bills."
 	>
 		<Leaderboard providers={data.final.providers} />
 	</Figure>
 	<p>
-		Splitting the images by how they were made shows where each one breaks. GPT-5.2 holds up under
-		rotation; Gemini handles blur better.
+		Grouping the images by the kind of damage shows where each model loses its points. Rotation is
+		what hurts Gemini: it drops to {percent(geminiRotated)}
+		while GPT-5.2 stays above 93%. Blur is GPT-5.2's weak spot. Brightness, compression and noise
+		barely affect either one.
 	</p>
-	<Figure n={5} caption="Final run split by image type. The axis starts at 40%.">
+	<Figure n={6} caption="The final run grouped by image type: the real photos, and copies rotated, darkened or brightened, blurred, compressed or with added noise. The axis starts at 40%.">
 		<BarChart rows={categoryRows} series={finalSeries} />
-	</Figure>
-
-	<h2>Preprocessing: simpler won</h2>
-	<p>
-		Preprocessing came late. After nine runs spent improving the prompt, I tried cleaning the
-		photos as a last resort, to see if it would move the numbers. Of the four methods I tried,
-		fixing the orientation and resizing to 1600px was the best overall: it helped three of the
-		four models and barely moved GPT-5.2. Straightening the perspective and boosting the contrast
-		made most of them worse. On the full set, resizing alone took Gemini 2.5 Flash from
-		{percent(geminiRaw.accuracy)} to {percent(gemini.accuracy)}.
-	</p>
-	<Figure n={6} caption="The same {data.preprocessing[0].imageCount} images under four preprocessing methods. The axis starts at 40%.">
-		<BarChart rows={preRows} series={preSeries} />
 	</Figure>
 
 	<h2>What I'd ship</h2>
@@ -165,7 +172,7 @@
 		<li>Charts cut off at the edge of the photo lose the missing months.</li>
 		<li>
 			Synthetic rotation is easier than a real phone held at an angle, so the rotation numbers in
-			Figure 5 are optimistic.
+			Figure 6 are optimistic.
 		</li>
 		<li>The models give no confidence score: in production nothing flags a wrong read on its own.</li>
 		<li>25 real bills is a small sample. The augmented copies widen it, but they come from the same photos.</li>
