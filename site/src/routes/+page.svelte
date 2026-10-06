@@ -64,10 +64,10 @@
 	<h2>The problem</h2>
 	<p>
 		A solar company in Puerto Rico sizes every installation from the customer's last 13 months of
-		consumption. Its sales reps work each lead through to an appointment and a quote, and the
-		consumption history comes from a bar chart on the LUMA bill. Customers send it however they
-		can: a photo of the paper bill on the kitchen table, tilted, in bad light, or a PDF from the
-		LUMA app. The sales reps were typing 13 kWh values and 13 prices by hand for every lead.
+		consumption. That history is printed as a bar chart on the LUMA bill. Customers send the bill
+		however they can: a photo of the paper bill on the kitchen table, tilted, in bad light, or a
+		PDF from the LUMA app. Then a sales rep had to type the 13 kWh values and the 13 prices by
+		hand, for every lead, before they could quote a system.
 	</p>
 	<p>
 		The question had three parts. Could an AI model do that job with prompt engineering alone, no
