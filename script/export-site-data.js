@@ -23,11 +23,9 @@ const PREPROCESSING = [
   ["Resize to 1600px", "exp-2026-02-14-0105.json"],
 ];
 
-// Images shown on the page, cropped to the chart (no names, addresses or account numbers).
-const SHOWCASE = [
-  { file: "image.png", image: "bills/screenshot.png", label: "Screenshot of the bill chart" },
-  { file: "lumaBill-page4.png", image: "bills/pdf-export.png", label: "PDF export from the LUMA app" },
-];
+// The input example on the page (Figure 1), cropped to the chart: no name, address, account
+// number or amount. Added by hand; if it's missing the page shows no figure.
+const INPUT_EXAMPLE = "bills/screenshot.png";
 
 const PER_MONTH = 15000;
 
@@ -106,28 +104,6 @@ function byCategory(exp) {
     }));
 }
 
-function showcase(exp) {
-  // The cropped images are added by hand; a bill without its image stays off the page.
-  const present = SHOWCASE.filter(({ image }) =>
-    fs.existsSync(path.join(__dirname, "..", "site", "static", image))
-  );
-  return present.map(({ file, image, label }) => {
-    const rows = exp.results.filter((r) => r.file === file && r.comparison);
-    const months = rows[0].comparison.results.map((m, i) => ({
-      month: m.month.expected,
-      kwh: m.kwh.expected,
-      costPerKwh: m.costPerKwh.expected,
-      models: Object.fromEntries(
-        rows.map((r) => {
-          const got = r.comparison.results[i];
-          return [r.provider, { kwh: got.kwh.actual, costPerKwh: got.costPerKwh.actual, pass: got.pass }];
-        })
-      ),
-    }));
-    return { image, label, months };
-  });
-}
-
 const final = load(FINAL);
 const noPre = load(NO_PREPROCESSING);
 const all = load(ALL_PROVIDERS);
@@ -141,7 +117,9 @@ const data = {
     const exp = load(file);
     return { method, ...meta(exp), providers: providers(exp) };
   }),
-  showcase: showcase(final),
+  inputExample: fs.existsSync(path.join(__dirname, "..", "site", "static", INPUT_EXAMPLE))
+    ? INPUT_EXAMPLE
+    : null,
   rawFile: `data/${final.id}.json`,
 };
 

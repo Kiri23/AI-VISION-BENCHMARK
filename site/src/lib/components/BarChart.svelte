@@ -3,9 +3,9 @@
 
 	/**
 	 * Horizontal bars, one group per row, one bar per series. Accuracy goes from `min` to 100.
-	 * @type {{ rows: { label: string, note?: string, values: Record<string, number> }[], series: string[], min?: number }}
+	 * @type {{ rows: { label: string, note?: string, values: Record<string, number> }[], series: string[], min?: number, legend?: boolean }}
 	 */
-	let { rows, series, min = 40 } = $props();
+	let { rows, series, min = 40, legend = true } = $props();
 
 	const width = (/** @type {number} */ v) => `${Math.max(0, ((v - min) / (100 - min)) * 100)}%`;
 
@@ -20,12 +20,14 @@
 	const color = (/** @type {string} */ s) => COLORS[/** @type {keyof typeof COLORS} */ (s)] ?? 'var(--kiri-apagado)';
 </script>
 
+{#if legend}
 <div class="legend">
 	{#each series as s (s)}
 		<span><i class="swatch" style:background={color(s)}></i>{shortName(s)}</span>
 	{/each}
 	<span class="axis">axis starts at {min}%</span>
 </div>
+{/if}
 
 <div class="chart">
 	{#each rows as row (row.label)}
