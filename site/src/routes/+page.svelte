@@ -86,10 +86,23 @@
 
 	<h2>Setup</h2>
 	<p>
-		Every model gets the same prompt and must answer in the same JSON shape: 13 months, each with
-		its label, kWh and cost per kWh. A harness runs every image against every model and checks each
-		month against a hand-checked ground truth. A month counts only if the label matches, the kWh
-		matches exactly and the price is within one cent.
+		Every model gets the same prompt, with no fine-tuning and no examples, and must answer in the same
+		JSON shape: 13 months, each with its label, kWh and cost per kWh. The prompt went through three
+		versions. The second one described the two stacked charts and told the model to read the printed
+		numbers instead of estimating from bar heights. The third, below, added hints about photos taken
+		at an angle; they didn't fix tilted photos.
+	</p>
+	<Figure
+		n={2}
+		caption="The prompt sent with every image ({data.prompt.version}). Gemini and OpenAI also receive the JSON shape as an enforced schema; Claude gets it as instructions."
+	>
+		<pre class="prompt">{data.prompt.text}</pre>
+		<pre class="prompt">{`{ "months": [ { "month": "ene-25", "kwh": 670, "costPerKwh": 0.26 }, … ] }`}</pre>
+	</Figure>
+	<p>
+		A harness runs every image against every model and checks each month against a hand-checked
+		ground truth. A month counts only if the label matches, the kWh matches exactly and the price
+		is within one cent.
 	</p>
 	<p>
 		The dataset started with 25 real bills: phone photos at different angles and light, plus PDF
@@ -104,7 +117,7 @@
 		behind. Gemini 2.0 Flash scored highest on this small set, but only GPT-5.2 and Gemini 2.5
 		Flash went on to the full run.
 	</p>
-	<Figure n={2} caption="First round, {data.allProviders.imageCount} original images. Accuracy, with the cost of one image under each model.">
+	<Figure n={3} caption="First round, {data.allProviders.imageCount} original images. Accuracy, with the cost of one image under each model.">
 		<BarChart rows={allRows} series={allSeries} min={0} legend={false} />
 	</Figure>
 	<p>
@@ -112,7 +125,7 @@
 		{costRatio}×.
 	</p>
 	<Figure
-		n={3}
+		n={4}
 		caption="Final run, {data.final.date}: {data.final.imageCount} images, prompt {data.final.prompt}, resized to 1600px. The monthly cost assumes {perMonth} bills."
 	>
 		<Leaderboard providers={data.final.providers} />
@@ -121,7 +134,7 @@
 		Splitting the images by how they were made shows where each one breaks. GPT-5.2 holds up under
 		rotation; Gemini handles blur better.
 	</p>
-	<Figure n={4} caption="Final run split by image type. The axis starts at 40%.">
+	<Figure n={5} caption="Final run split by image type. The axis starts at 40%.">
 		<BarChart rows={categoryRows} series={finalSeries} />
 	</Figure>
 
@@ -134,7 +147,7 @@
 		made most of them worse. On the full set, resizing alone took Gemini 2.5 Flash from
 		{percent(geminiRaw.accuracy)} to {percent(gemini.accuracy)}.
 	</p>
-	<Figure n={5} caption="The same {data.preprocessing[0].imageCount} images under four preprocessing methods. The axis starts at 40%.">
+	<Figure n={6} caption="The same {data.preprocessing[0].imageCount} images under four preprocessing methods. The axis starts at 40%.">
 		<BarChart rows={preRows} series={preSeries} />
 	</Figure>
 
@@ -152,7 +165,7 @@
 		<li>Charts cut off at the edge of the photo lose the missing months.</li>
 		<li>
 			Synthetic rotation is easier than a real phone held at an angle, so the rotation numbers in
-			Figure 4 are optimistic.
+			Figure 5 are optimistic.
 		</li>
 		<li>The models give no confidence score: in production nothing flags a wrong read on its own.</li>
 		<li>25 real bills is a small sample. The augmented copies widen it, but they come from the same photos.</li>
@@ -162,7 +175,7 @@
 	<p>
 		The harness and this page are in <a href={REPO}>Kiri23/AI-VISION-BENCHMARK</a>. The per-image
 		results of the final run are in <a href={raw} download>this JSON file</a>: every image, every
-		model, every month, with tokens and cost. To run it on your own bills, clone the repo, add API
+		model, every month, with tokens, cost and the prompt. To run it on your own bills, clone the repo, add API
 		keys to <code>.env</code>, put the images in <code>sample/</code> with their values in
 		<code>ground-truth.json</code>, and run <code>npm start</code>.
 	</p>
@@ -215,6 +228,15 @@
 	}
 	code {
 		font: 0.85em var(--kiri-mono);
+	}
+	.prompt {
+		margin: 0 0 var(--kiri-e-2);
+		padding: var(--kiri-e-3) var(--kiri-e-4);
+		background: var(--kiri-panel);
+		border: var(--kiri-b-hilo) solid var(--kiri-linea);
+		border-radius: var(--kiri-r-sm);
+		font: var(--kiri-t-xs) / var(--kiri-i-normal) var(--kiri-mono);
+		white-space: pre-wrap;
 	}
 	img {
 		display: block;

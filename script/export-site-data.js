@@ -104,6 +104,11 @@ function byCategory(exp) {
     }));
 }
 
+// The prompt text itself, so readers can see exactly what every model was asked.
+function prompt(version) {
+  return { version, text: require(`../prompts/${version}.js`).EXTRACTION_PROMPT.trim() };
+}
+
 const final = load(FINAL);
 const noPre = load(NO_PREPROCESSING);
 const all = load(ALL_PROVIDERS);
@@ -120,6 +125,7 @@ const data = {
   inputExample: fs.existsSync(path.join(__dirname, "..", "site", "static", INPUT_EXAMPLE))
     ? INPUT_EXAMPLE
     : null,
+  prompt: prompt(final.promptVersion),
   rawFile: `data/${final.id}.json`,
 };
 
@@ -127,7 +133,8 @@ fs.mkdirSync(path.dirname(OUT_DATA), { recursive: true });
 fs.writeFileSync(OUT_DATA, JSON.stringify(data, null, 2) + "\n");
 
 // The full per-image log of the final run, for anyone who wants to recompute the numbers.
-const { reportMarkdown, ...raw } = final;
+const { reportMarkdown, ...log } = final;
+const raw = { ...log, promptText: data.prompt.text };
 fs.mkdirSync(OUT_RAW, { recursive: true });
 fs.writeFileSync(path.join(OUT_RAW, `${final.id}.json`), JSON.stringify(raw, null, 2) + "\n");
 
