@@ -127,9 +127,11 @@
 
 	<h2>Preprocessing: simpler won</h2>
 	<p>
-		Before the full run I tried four ways of cleaning the photos. Fixing the orientation and
-		resizing to 1600px was the best method overall: it helped three of the four models and barely
-		moved GPT-5.2. Straightening the perspective and boosting the contrast made most of them worse. On the full set, resizing alone took Gemini 2.5 Flash from
+		Preprocessing came late. After nine runs spent improving the prompt, I tried cleaning the
+		photos as a last resort, to see if it would move the numbers. Of the four methods I tried,
+		fixing the orientation and resizing to 1600px was the best overall: it helped three of the
+		four models and barely moved GPT-5.2. Straightening the perspective and boosting the contrast
+		made most of them worse. On the full set, resizing alone took Gemini 2.5 Flash from
 		{percent(geminiRaw.accuracy)} to {percent(gemini.accuracy)}.
 	</p>
 	<Figure n={5} caption="The same {data.preprocessing[0].imageCount} images under four preprocessing methods. The axis starts at 40%.">
